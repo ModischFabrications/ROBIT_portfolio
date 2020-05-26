@@ -86,7 +86,7 @@ Schüler schreiben die Logik/Software, komplexe Systeme sind vereinfacht angebot
 - Metallring mit Hall-Sensor/Reed-Switch
 - LED-Matrix: Statusanzeige, Spielerei
 
-![RobotSideView_2](uploads/587a1fbc9a4e0d4cce2b92f506833a0c/RobotSideView_2.png)
+![RobotSideView_2](chapters/proposals/RobotSideView_2.png)
 
 
 ### Schatz:
