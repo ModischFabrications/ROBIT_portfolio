@@ -84,7 +84,6 @@ Cons:
 - laden beim programmieren wäre gut
 
 
-<br/><br/>
 
 # MVP (Minimum Viable Product)
 - Installation: Arduino IDE + Arduino Nano + Dependencies -> 1h Setup
