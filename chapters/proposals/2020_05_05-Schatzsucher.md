@@ -73,6 +73,7 @@ Schüler schreiben die Logik/Software, komplexe Systeme sind vereinfacht angebot
 | ------ | ------ |
 | Arduino Nano mit Micro USB | [Eckstein](https://eckstein-shop.de/HIMALAYA-basic-Nano-V32-Board-Atmega328P-Arduino-kompatibel-Micro-USB-CP2104-USB-UART-IC) 6.53€
 | Stepper Driver Board L9110S | [Eckstein](https://eckstein-shop.de/L9110-Dual-Channel-Stepper-Motor-Drive-Board-for-Arduino) 1.40€
+| USB Powerbank | [ebay](https://www.ebay.de/itm/Powerbank-10000mAh-External-Charger-tragbare-LED-2USB-Batterie-Fur-Mobile-Phone/392659445050) 8.99€
 
 ### Fahrzeug:
 - Arduino Nano
