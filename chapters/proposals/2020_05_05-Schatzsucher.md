@@ -67,7 +67,7 @@ Schüler schreiben die Logik/Software, komplexe Systeme sind vereinfacht angebot
 | PLA Filament 1.75mm | [Reichelt](https://www.reichelt.com/de/en/pla-filament-1-75-mm-traffic-yellow-0-75-kg-m4p-20400211141-p277618.html) 15.95€ | [ebay](https://www.ebay.de/itm/3D-Drucker-Filament-1kg-PLA-1-75mm-Durchmesser-Spule-Rolle-1000g-Made-in-DE/401619975552) 16.90€
 | RGB LED Matrix | [ebay](https://www.ebay.de/itm/WS2812-RGB-LED-Breakout-Modul-8x8-Matrix-8-12-16-24-Rund-Ring-Neopixel-AUSWAHL/293201996955) 8.33€ | [AliExpress](https://de.aliexpress.com/item/4000193732451.html) 5.10€
 
-## aktuelle noch benötigte Bauteile:
+## ~~aktuelle noch benötigte Bauteile:~~
 
 | Bauteil | deutscher Händler
 | ------ | ------ |
