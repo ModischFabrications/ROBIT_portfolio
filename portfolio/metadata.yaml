@@ -1,4 +1,6 @@
 ---
+title: "Portfolio Gruppe 3"
+lang: "de"
 author: [Robin Modisch, Mark Brieger, Tobias Brieger]
 date: "29. Sep 2020"
 subject: "Praktikum Informatik in der Bildung (SoSe2020)"
@@ -6,4 +8,7 @@ keywords: [PIB, ROBIT]
 subtitle: "Praktikum Informatik in der Bildung (SoSe2020)"
 titlepage: true
 titlepage-rule-color: "FFC300"
+toc-own-page: true
+logo: "images/Logo.pdf"
+logo-width: 200
 ...
