@@ -76,6 +76,8 @@ TODO Render
 
 ![RobotSideView_2](images/RobotSideView_2.png)
 
+![RobotTopView_2](images/RobotTopView_2.png)
+
 
 ### Schatz
 3D-gedruckter Schatz mit eingebettetem Magneten. 
