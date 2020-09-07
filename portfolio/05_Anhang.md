@@ -1,53 +1,13 @@
-# Schatzsuche
-
-## Szenario
-
-"Finde und berge den Schatz!"
-
-Auf dem Grund eines dunklen Sees liegt ein verborgener Schatz. Da der Druck und die Tiefe so groß sind muss dieser durch eine autonome Drohne geborgen werden. Die Drohne kann den Schatz mit Hilfe eines Sonars aufspüren. Um diesen nun sicher zu bergen muss er zum Ufer des Sees transportiert werden.
-
-Der See ist mit Klebeband auf dem Boden markiert. Die Schatzsucher entwickeln und programmieren ein U-Boot, das den Schatz aufspürt und zum Ufer bringt.
 
 
-## Lehre
-
-Gruppenarbeit entweder für Module oder gemeinsame Fahrzeuge
-Wettbewerb nach Zeit möglich
-
-Schüler schreiben die Logik/Software, komplexe Systeme sind vereinfacht angeboten.
-
-### Zielgruppe 
-**Vorwissen**
-- Grundlagen Programmierung
-  - Logik, Schleifen, Conditionals
-  - Funktionsaufrufe
-  - Interfaces
-- technisches Verständnis
-
--> Informatiker Fachausbildung oder Bachelor
-
-### Lehrinhalt
-- Datennetze/Kommunikation/Bussysteme
-- Embedded
-- Algorithmik
-- Suchstrategien
-- Räumliches Vorstellungsvermögen
-- Robotik
-- Sensorik
-- Cyber Physical Systems
-- Verteilte Systeme
-- Echtzeitsysteme
 
 
-### Herausforderungen:
-1. Distanzsensor und Bewegung peilen zusammen die Position des Objekts
-2. Intelligente Suchstrategie im Feld
-3. Abgrenzen Sensorpolling gegen andere Module und Geschwindigkeit (künstlich Frequenz begrenzen?)
 
-4. Definition von Schnittstellen
-5. Verwendung von Libraries
-6. Teamarbeit und Koordination
-7. Scheduling von Programmfluss
+
+
+
+
+## Teileliste
 
 
 ## Bauteile:
@@ -74,24 +34,6 @@ Schüler schreiben die Logik/Software, komplexe Systeme sind vereinfacht angebot
 | Arduino Nano mit Micro USB | [Eckstein](https://eckstein-shop.de/HIMALAYA-basic-Nano-V32-Board-Atmega328P-Arduino-kompatibel-Micro-USB-CP2104-USB-UART-IC) 6.53€
 | Stepper Driver Board L9110S | [Eckstein](https://eckstein-shop.de/L9110-Dual-Channel-Stepper-Motor-Drive-Board-for-Arduino) 1.40€
 | USB Powerbank | [ebay](https://www.ebay.de/itm/Powerbank-10000mAh-External-Charger-tragbare-LED-2USB-Batterie-Fur-Mobile-Phone/392659445050) 8.99€
-
-### Fahrzeug:
-- Arduino Nano
-- HC-SR04 -> Sonar
-  - Servo -> schwenkbar als optionale Erweiterung
-- Helligkeitssensor/IR unten -> Linienerkennung für Spielfeld
-- Motoren + Chassis + Speedcontroller + Räder
-- Servo + Magnetarm
-- Kompass (+ Accelometer + Gyroskop) -> Ortungshilfe 
-- Austauschbarer Akku: 18650 mit BMS (Akkustand)
-- Metallring mit Hall-Sensor/Reed-Switch
-- LED-Matrix: Statusanzeige, Spielerei
-
-![RobotSideView_2](chapters/proposals/RobotSideView_2.png)
-
-
-### Schatz:
-3D-gedruckter Würfel mit eingebetteten Magneten
 
 
 
