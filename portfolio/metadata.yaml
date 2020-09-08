@@ -7,8 +7,9 @@ subject: "Praktikum Informatik in der Bildung (SoSe2020)"
 keywords: [PIB, ROBIT]
 subtitle: "Praktikum Informatik in der Bildung (SoSe2020)"
 titlepage: true
-titlepage-rule-color: "FFC300"
-toc-own-page: true
-logo: "images/Logo.pdf"
+titlepage-rule-color: "F3C350"
+titlepage-background: "images/background7.pdf"
+logo: "images/logo2.pdf"
 logo-width: 200
+toc-own-page: true
 ...
