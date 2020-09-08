@@ -3,13 +3,13 @@
 
 
 
-
+\pagebreak
 ## Teileliste
 
 TODO Kleinteile (Schrauben, Inserts ... )
 
 | Bauteil | deutscher Händler | internationaler Händler
-| ------ | ------ | ------ |
+| ------ | ---: | ---: |
 | Arduino Nano mit Micro USB | [Eckstein](https://eckstein-shop.de/HIMALAYA-basic-Nano-V32-Board-Atmega328P-Arduino-kompatibel-Micro-USB-CP2104-USB-UART-IC) 6.53€ | [AliExpress](https://www.aliexpress.com/item/4000579100527.html) 2.72€
 | Stepper Driver Board L9110S | [Eckstein](https://eckstein-shop.de/L9110-Dual-Channel-Stepper-Motor-Drive-Board-for-Arduino) 1.40€ | [AliExpress](https://www.aliexpress.com/item/32848290319.html) 0.99€
 | Motor (2x) <sup>*</sup> | [Conrad](https://www.conrad.de/de/p/joy-it-com-motor01-getriebemotor-gelb-schwarz-passend-fuer-einplatinen-computer-arduino-banana-pi-cubieboard-raspbe-1573543.html) 7.78€ | [AliExpress](https://www.aliexpress.com/item/4000206577910.html) 2.92€
