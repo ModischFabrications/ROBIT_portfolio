@@ -1,0 +1,8 @@
+image: xldrkp/pandoc:latest
+
+build:
+  script:
+    - build.sh
+  artifacts:
+    paths:
+      - portfolio.pdf
