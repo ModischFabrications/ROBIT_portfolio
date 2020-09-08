@@ -8,6 +8,7 @@ keywords: [PIB, ROBIT]
 subtitle: "Praktikum Informatik in der Bildung (SoSe2020)"
 titlepage: true
 titlepage-rule-color: "F3C350"
+titlepage-rule-height: 0
 titlepage-background: "images/background7.pdf"
 logo: "images/logo2.pdf"
 logo-width: 200
