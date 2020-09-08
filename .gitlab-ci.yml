@@ -1,8 +1,12 @@
-image: xldrkp/pandoc:latest
+# skip entrypoint for pandoc autostart; needs to be an eisvogel compatible image
+image: 
+    name: dalibo/pandocker:latest
+    entrypoint: [""]
 
 build:
   script:
-    - build.sh
+    - chmod +x ./build.sh
+    - ./build.sh
   artifacts:
     paths:
-      - portfolio.pdf
+      - ./portfolio.pdf

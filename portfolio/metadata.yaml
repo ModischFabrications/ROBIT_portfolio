@@ -12,6 +12,8 @@ titlepage-rule-height: 0
 titlepage-background: "images/background7.pdf"
 logo: "images/logo2.pdf"
 logo-width: 200
+toc: true
 toc-own-page: true
+toc-depth: 3
 colorlinks: true
 ...
