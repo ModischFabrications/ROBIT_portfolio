@@ -1,2 +1,2 @@
-cd portfolio
-pandoc *.md --metadata-file=metadata.yaml --pdf-engine=xelatex --template=../templates/eisvogel.tex --toc -o ../portfolio.pdf
+cd ./portfolio
+pandoc *.md --metadata-file=metadata.yaml --pdf-engine=xelatex --template=../templates/eisvogel.tex -o ../portfolio.pdf
