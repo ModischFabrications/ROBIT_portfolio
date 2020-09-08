@@ -13,4 +13,5 @@ titlepage-background: "images/background7.pdf"
 logo: "images/logo2.pdf"
 logo-width: 200
 toc-own-page: true
+colorlinks: true
 ...
