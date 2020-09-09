@@ -7,6 +7,7 @@ TODO Das Projekt besteht aus XXX und YYY
 
 
 ![render_front](images/render_front.png)
+
 ![render_back_lifted](images/render_back_lifted.png)
 
 ## Szenario
@@ -79,6 +80,7 @@ Schüler schreiben die Logik/Software, komplexe Systeme sind vereinfacht angebot
 - LED-Matrix: Statusanzeige, Spielerei
 
 ![render_side](images/render_side.png)
+
 ![RobotSideView_2](images/RobotSideView_2.png)
 
 
