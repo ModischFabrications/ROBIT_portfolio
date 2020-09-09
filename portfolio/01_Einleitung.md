@@ -5,6 +5,10 @@ ROBIT ist eine Lehr- und Lernplattform, mit der Schülern, Studenten und allen a
 TODO Das Projekt besteht aus XXX und YYY
 
 
+
+![render_front](images/render_front.png)
+![render_back_lifted](images/render_back_lifted.png)
+
 ## Szenario
 
 "Finde und berge den Schatz!"
@@ -13,7 +17,7 @@ Auf dem Grund eines dunklen Sees liegt ein verborgener Schatz. Da der Druck und 
 
 Der See ist mit Klebeband auf dem Boden markiert. Die Schatzsucher entwickeln und programmieren ein U-Boot, das den Schatz aufspürt und zum Ufer bringt.
 
-TODO: Unterschied Querschnitt zu Draufsicht verdeutlichen -> Bild vom See zeigen, dann fade zu Boden mit Klebeband?
+![RobotTopView_2](images/RobotTopView_2.png)
 
 Eingriffe in das System sind nur außerhalb vom See möglich, der Roboter muss vollständig autonom die Aufgabe erfüllen können. Geschickte Entwickler können den Roboter wieder zu ihrer Seite des Sees bringen um sich einen weiten Weg zu sparen, das Bergen an anderen Ufern ist aber ebenfalls zulässig. 
 
@@ -62,7 +66,7 @@ Schüler schreiben die Logik/Software, komplexe Systeme sind vereinfacht angebot
 
 ### Fahrzeug
 
-TODO Render
+![render_bottom](images/render_bottom.png)
 
 - Arduino Nano
 - HC-SR04 -> Sonar
@@ -74,9 +78,10 @@ TODO Render
 - Metallring mit Hall-Sensor/Reed-Switch
 - LED-Matrix: Statusanzeige, Spielerei
 
+![render_side](images/render_side.png)
 ![RobotSideView_2](images/RobotSideView_2.png)
 
-![RobotTopView_2](images/RobotTopView_2.png)
+
 
 
 ### Schatz
