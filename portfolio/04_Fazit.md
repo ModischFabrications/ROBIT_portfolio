@@ -10,4 +10,7 @@ Motoren sind scheiße, lieber was teureres
 PlatformIO hat Einstiegshürde, ist aber noch gut nutzbar
 
 
+LEDs beliebig erweiterbar
+LEDs könnten Hue-kompensiert werden
+
 
