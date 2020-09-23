@@ -217,6 +217,12 @@ Hierbei wurden Probleme, wie die kontinuierliche Aktualisierung der Sensoren, au
 
 ## Milestone 4: Entwicklung
 
+### Aufspalten in Bibliotheken
+Die unterschiedlichen Levels der Integration, die Schülern angeboten werden, wurden bereits während der Entwicklung berücksichtigt: 
+Zunächst wurde mit Hilfe eines Prototyps und einer Testschaltung Programmcode entwickelt und auf die Komponenten angepasst. Anschließend wurde dieser Code in einzelne Bibliotheken aufgespalten. 
+Unsere eigenen Klassen wurden so konzipiert, dass sie mehr Funktionalität bieten, als in unserer eigenen Implementierung verwendet wurde. Somit werden auch andere Lösungen ermöglicht.
+Den Klassen wurden Kurzbeschreibungen mit Informationen über das Level und die Verwendung im Header hinzugefügt.
+
 ### Entwicklung des Wrappers
 Um die Programmierung für Schüler zu vereinfachen wurden komplexe Sachverhalte abstrahiert und in verschiedene Level aufgeteilt, zu sehen in [Levels].
  
@@ -282,5 +288,33 @@ Befestigung mit vorhandenen M2-Löchern
 
 ![Einbau](images/pcb_assembly.jpg)
 
+
+
+## Milestone 5: Fertigung
+Die Fertigung und Verwendung des Prototyps offenbarte in vielen Bereichen ein Optimierungspotential für das finale Fahrzeug. 
+Die für den Prototypen gedruckten Teile wurden vor allem auf Druckgeschwindigkeit optimiert und hatten nur eine geringe Druckauflösung, beide Aspekte wurden für das finale Modell auf Qualität optimiert. 
+
+Um einen konsistenten Stand zu erhalten wurden wurden alle notwendigen CAD Optimierungen bis zu einer Deadline am 15.7.2020 umgesetzt und anschließend die finalen Teile gedruckt. Danach anfallende kleinere Änderungen wurden nur noch im Modell angepasst und nicht mehr gefertigt. 
+Die Karosserie wurde in Gelb gedruckt, um - passend zum Szenario - auf ein gelbes U-Boots anzuspielen. Der Druck der Karosserie benötigte 150g PLA und 13 Stunden Druckzeit.
+
+![Foto Drucken](images/photo_print.jpg)
+
+Die Bodenplatte wurde aus transparentem Acrylglas gefertigt. Hierfür wurden mit Hilfe eines selbst gebauten Lasercutters die Beschriftungen graviert und die Umrisse angezeichnet. Anschließend wurden diese Umrisse per Hand ausgeschnitten, da der Laser nicht genug Leistung für einen Schnitt durch die komplette Dicke des Materials hatte. 
+Zur finalen Fertigung gab es das erste persönliche Treffen, alle vorherigen Abstimmungen fanden den Umständen entsprechend online statt. Alle Teilnehmer haben ihre jeweiligen Komponenten zusammengetragen und individuellen Hinweise zu Komponenten erfasst. Vor dem Zusammenbau wurde ein Explosionsbild aller verwendeter Komponenten aufgenommen, um den vollen Umfang der Teileliste aus [Teileliste] auch bildlich zu erfassen. 
+
+![Explosionsbild](images/explosion.jpg)
+
+Bei den finalen gedruckten Teile fielen noch kosmetische Verbesserungsmöglichkeiten auf, wie die Tiefe der Inserts und eine Abrundung über den Motoren. Diese wurden im CAD Modell angepasst und anschließend als STL-Datei und veränderbarere STP-Datei exportiert.
+
+
+## Milestone 6: Dokumentation
+
+### Handbuch schreiben
+Um alle Erkenntnisse unserer Entwicklung und des Referenzprojekts zu erfassen wurde ein Handbuch für Lehrkräfte mit allen alle relevanten Informationen zur Durchführung des Projekts verfasst. 
+
+Wie beim Rest der Dokumentation wurde sich für `Markdown` als Auszeichnungssprache und `Pandoc` als Konvertierungswerkzeug entschieden. Somit können wir die bisherigen `Markdown` Notizen in ein mit `LaTeX` gesetztes PDF-Dokument umwandeln und so die Vorteile von beidem nutzen. 
+Um Dopplungen zu vermeiden wurde das Handbuch mit der Einleitung des Projekts vereinigt, zu finden in [TODO Einleitung]. In diesem wird das Szenario beschrieben, was die Zielgruppe ist und welche Lehrinhalte vermittelt werden. Außerdem sind hier die Level beschrieben, aus denen die Lehrkraft je nach den Vorkenntnissen der Gruppe einen passenden Schwierigkeitgrad auswählt.
+ 
+Die ausführenden Gruppenmitglieder werden durch die in Kommentaren und Header-Beschreibungen der ihnen zur Verfügung stehenden Klassen weiter informiert.
 
 
