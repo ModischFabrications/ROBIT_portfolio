@@ -1,3 +1,5 @@
+![Foto Seitenansicht](images/photo_side.jpg)
+
 # Die Entwicklung
 
 Die Entwicklung lässt sich in 7 Milestones über einen Verlauf von 15 Wochen unterteilen.
@@ -150,12 +152,18 @@ Die Erkennbarkeit hat sich dadurch leicht verbessert, größer war der Vorteil i
 
 Der zylindrische Schatz lässt sich außerdem aufschrauben, um einen Anreiz für Schüler zu verstecken. 
 
-TODO Querschnitt mit Gewinde
+![Render Schatz Querschnitt](images/render_schatz_cut.png)
 
 ### Angel
+Es wurden verschiedene Servos, Angelmechanismen und Angellänge getestet. Da der Schatz klein und leicht ist, wurde sich für einen Mini-Servo mit Metallgetriebe entschieden. Ein Angelmechanismen mit nur einem Drehpunkt ist einfacher und hat keine Nachteile, demnach wurde dieser auch im CAD umgesetzt. 
 
-Halterung für Servo und LED-Streifen
+![Angel Prototyp](images/angel_prototyp.jpg)
 
+Nach mehreren Design Iterationen wurde sich auf einen Aufbau geeinigt, bei dem sich im Kopf der Angel eine Unterlegscheibe und der Hall-Sensor direkt darüber befindet. Die Kabel wurden durch einen Kanal im Angelarm zum Roboter geführt und mit Schrumpfschlauch fixiert. Für eine bessere Druckbarkeit wurde die Abdeckung vom Hallsensor als einzelnes Teil modelliert, es enthält außerdem Aussparungen für die Zustands-LED und das Potentiometer zum Einstellen der Empfindlichkeit des Hallsensors. 
+
+Die Halterung für den Servo und den LED-Streifen wurde als zusätzliches Bauteil modelliert. Dies vereinfacht den Druck und das Zusammensetzten. Die Servo zum Bewegen den Angel wurde so fixiert, dass er flach auf der Abdeckung aufliegt und mit nur einer Schraube im 3D-Druck in Position gehalten wurde. Später wurde ein kurzer LED-Streifen zu Statusanzeige in dieser Halterung entworfen und eingebaut. Hierfür wurde der Streifen mit 10 LEDs im Modell ausgespart und ein extra Kanal für die Kabel gelassen.
+
+Bei der Ansteuerung des Servos wurde festgestellt, dass bei der Nutzung von PWM-Pins für die DC-Motoren und dem Servo die Anzahl der benötigten Timer nicht ausreichen, also wurden die Pins für die Motoren geändert.
 
 ### Magnetsensor
 Das Aufheben des Schatzes ist nicht zuverlässig genug um blind gemacht zu werden, daher war es notwendig einen Sensor zu verwenden. 
@@ -175,6 +183,35 @@ Eine Detektion ist auch bei 1cm verlässlich, für Feinjustierungen wurde ein Sl
 Um Timingprobleme bei langsamen Programmen zu vermeiden kann breiteres Tape verwendet werden, zusätzlich kann vom Sensor ein unterbrechender Interrupt ausgelöst werden. 
 Bei einem dunklen Boden wird helles Tape verwendet und der Sensorausgang invertiert. 
 
+### Kompass
+Um eine genauere Ausrichtung beim Fahren zu ermöglichen wird ein Kompass verwendet. Hierfür wurde sich für den Chip `MPU6050` entschieden, da dieser weit verbreitet ist und eine I2C Schnittstelle bietet. 
+Da es sich bei dem Sensor um einen Gyrosensor handelt muss für die Berechnung eines absoluten Winkels eine regelmäßige Aktualisierung stattfinden. 
+
+Beide getestete Sensoren haben ein Fehlverhalten gezeigt, bei dem der Sensor kurz nach dem Initialisieren falsche Werte liefert. Sobald ein solches Fehlverhalten durch unplausibel veränderte Werte festgestellt wird, wird der Sensor durch ein Zurücksetzten neu initialisiert. 
+Es wurde die Bibliothek `MPU6050_tockn` gewählt, da diese eine Offset Kalibrierung und einen fortlaufenden Winkel bietet. 
+
+
+### Karosserie
+Der zentrale Bestandteil des Roboters ist die Karosserie, die alle Komponenten miteinander verbindet. Die Größe und Form der Motoren war hierfür vor allem zu berücksichtigen. Außerdem sollte der Kompass möglichst auf dem Drehpunkt des Fahrzeugs liegen. 
+
+![Foto Karosserie Seitenansicht](images/render_carriage_bottom.png)
+
+Höhen und Ausrichtungen der Sensoren wurden mit Hilfe des Prototypen experimentell ermittelt oder einstellbar modelliert. Die Elektronik wurde in einer nach unten geöffneten Box unterhalb der Powerbank untergebracht und kann mit einem Deckel vor Berühren geschützt werden. 
+
+![Foto Deckel](images/photo_cover.jpg)
+
+Für eine bessere Wartbarkeit wurde bei Schraubverbindungen Aussparungen für Insert modelliert. Für die Kabelführung zum Powerbank wurden Aussparungen auf der Rückseite des Roboters modelliert, neben dran befindet sich ein Schalter, der den Strom der Motoren unterbricht um ein ungewolltes Bewegen beim Programmieren zu verhindern. 
+Als Stützrad wurde sich nach mehreren Tests für eine omnidirektionale Rolle aus einem Roll-On-Deodorant entschieden und eine Halterung für diese auch im CAD eingefügt. 
+Nach einem Testdruck und einer Einpassung der Komponenten wurden noch kleinere Änderungen vorgenommen. Auch eine Personalisierung durch eigene Logos auf der Karosserie wurde hinzugefügt.
+
+![Render Karosserie Draufsicht](images/render_carriage_top.png)
+
+### Implementierung der Logik
+Für die Modellierung des Programmablaufs wurde ein Zustandsdiagramm verwendet.
+
+![Prototyp des Progammablaufs](images/state_chart.png)
+
+Hierbei wurden Probleme, wie die kontinuierliche Aktualisierung der Sensoren, ausfindig gemacht und behoben. Anschließend wurde dieses Zustandsdiagramm mit Hilfe einer `switch` Anweisung in Programmcode umgesetzt und erweitert. 
 
 
 
