@@ -117,6 +117,38 @@ Im Laufe der Bestell- und Testphase wurden für alle Bauteile eigene 3D-Modelle 
 
 Außerdem wurde sich auf Coding-Guidelines geeinigt, die den Programmierstil ähnlich halten und den Programmfluss übersichtlich gestallten.
 
+### Gestaltung der Texte
+
+Als zentraler Wiedererkennungswert wurde zum Fahrzeug auch noch ein Logo entwickelt. 
+Zur Auswahl standen viele Stile und Fonts, der Fokus lag vor allem auf der Druck- und Erkennbarkeit ohne große farbliche Kontraste. 
+Auch Lizenzbedingungen mussten eingehalten werden, weshalb sich letztendlich auf eine Auswahl der folgenden Fonts beschränkt wurde: 
+
+1. [Montserrat Subrayada](https://fonts.google.com/specimen/Montserrat+Subrayada)
+2. [Bungee](https://fonts.google.com/specimen/Bungee)
+3. [Russo One](https://fonts.google.com/specimen/Russo+One)
+
+In der Theorie haben alle drei Fonts gut gepasst, daher wurde ein Testdruck mit diesen Fonts gemacht. Außerdem konnten so verschiedene Prägetiefen verglichen werden. 
+In [Vorderseite] ist gut zu erkennen das tiefere Prägungen mit 0.4mm statt 0.2mm einen besseren Kontrast ergeben, dies ist vor allem im "U" aus dem FAU-Logo zu sehen. 
+
+![Vorderseite](images/fonts_front.jpg)
+
+Um die Lesbarkeit auch auf einer rückseitigen Prägung zu gewährleisten wurde auf beiden Seiten getestet, auf der Rückseite ist der Vorteil einer tieferen Prägung sogar noch deutlicher zu erkennen. 
+
+![Rückseite](images/fonts_back.jpg)
+
+Alle drei Fonts kamen gut zu Geltung, lezttendlich war unser einstimmiger Favorit aber [Bungee](https://fonts.google.com/specimen/Bungee).
+Da der Font nur Großbuchstaben enthält wurde der finale Projektname auf "ROBIT" festgelegt. 
+
+### Integration der Logos
+
+Um die Zugehörigkeit aller Komponenten zum Projekt zu zeigen wurde alles mit dem zuvor entworfenen Logo markiert. 
+Ergänzend wurden auch das Logo der FAU und die Logos von den Gruppenmitgliedern hinzugefügt, um Herkunft und Autor zu kennzeichnen. 
+
+Zuletzt wurde als *Easteregg* auch ein Verweis auf das Jahr und die aktuelle Studiensituation hinzugefügt. 
+
+Alle Grafiken wurden in Inkscape entworfen, in saubere, nicht überlagerte Flächen kombiniert und als svg geteilt. 
+
+
 ## Milestone 3: Entwicklung
 
 ### Platine
@@ -138,21 +170,39 @@ Ein größeres Problem waren die Sonarquerschnitte: Je nach Winkel und Form des 
 
 ![HC-SR04 Plot Rotation](images/HC-SR04_plot_rotation.png)
 
+Langsamere Drehungen haben durch eine feinere Auflösung zu mehr Detektionen geführt, genauso auch die Mittelung über mehr Messungen. 
+Die Begrenzung der maximalen Messlänge hat durch eine Verringerung der Fehldetektion von Wänden und Reflektionen weiter die Logik vereinfacht, führt aber auch zu einer Reduktion der effektiv nutzbaren Fläche. 
+
+
 ### Entwurf des Schatzes
 
 Im Laufe der Entwicklung wurden mehrere Formen evaluiert: Zylindrische Formen waren winkelstabil, aber auch gleichbleibend unzuverlässig. 
-Rechteckige Querschnitte wurden direkt verworfen. Eine interessante Alternative war eine durch Radarprismen inspirierte komplexere Form ([Render Radarprisma]), die zwar nicht mehr realistisch, aber besser zu erkennen war. 
+Rechteckige Querschnitte wurden direkt verworfen, da eine Detektion an den Ecken völlig unmöglich war. 
+Eine interessante Alternative war eine durch Radarprismen inspirierte komplexere Form ([Render Radarprisma]), die zwar nicht mehr realistisch, aber besser zu erkennen war. 
+Die hier verwendeten Innenwinkel haben zusätzlich zur etwas besseren Winkelstabilität die Detektionsreichweite merklich verbessert. 
+Trotzdem ist die Erkennung frontal zum spitzen Winkel merklich schlechter als vor dem Innenwinkel. 
 
 ![Render Radarprisma](images/render_radarprisma.png)
 
-Daraus ergeben hat sich eine Modifikation des Zylinders durch kleine Reflektionskerben, zu sehen in [Render Schatz]. 
+Daraus hat sich eine Modifikation des Zylinders durch kleine Reflektionskerben ergeben:
+
+![Prismenoberfläche](images/knurling.png)
+
 Die Erkennbarkeit hat sich dadurch leicht verbessert, größer war der Vorteil in der Haptik. 
 
 ![Render Schatz](images/render_schatz.png)
 
+
 Der zylindrische Schatz lässt sich außerdem aufschrauben, um einen Anreiz für Schüler zu verstecken. 
+Hierfür wurde ein eigenes Gewinde mit besser druckbarem Winkel entworfen, das kein Stützmaterial benötigt. 
+Außerdem wurde eine Einkerbung mit dazu passender Erhöhung entworfen, die ein Klickverhalten beim Drehen realisieren. 
+
+![Einkerbung](images/notches.png)
+
+Der finale Entwurf des zylindrischen Schatzes ist damit in [Render Schatz Querschnitt] zu sehen. 
 
 ![Render Schatz Querschnitt](images/render_schatz_cut.png)
+
 
 ### Angel
 Es wurden verschiedene Servos, Angelmechanismen und Angellänge getestet. Da der Schatz klein und leicht ist, wurde sich für einen Mini-Servo mit Metallgetriebe entschieden. Ein Angelmechanismen mit nur einem Drehpunkt ist einfacher und hat keine Nachteile, demnach wurde dieser auch im CAD umgesetzt. 
@@ -171,17 +221,24 @@ Unsere Entscheidung fiel auf den Einbau eines Magneten im Schatz, daher konnte e
 Es wurde überlegt den Sensor von der Schaltung zu trennen um die Angel kompakter zu machen, dies wurde zugunsten der Signalqualität verworfen. 
 
 Der Sensor liefert ein binäres Signal zurück, das per Potentiometer kalibriert werden kann, die eingestellte Schaltschwelle schaltet erst nachdem der Schatz zur Angel gesprungen ist. 
+Im Uhrzeigersinn gedreht wird der Sensor empfindlicher. Die angelegte Spannung hat ebenfalls einen großen Einfluss auf die Empfindlichkeit, 
+daher sollten Kalibrierungen nur mit Verbindung zur Powerbank und laufendem Motor vorgenommen werden. 
 
 Problem unseres Sensors ist die Polarität, da das Magnetfeld nur in eine Richtung erkannt wird. 
-Wenn jetzt mehrere Magneten abwechselnd gedreht eingebaut werden gibt es genug Magnetkraft zum halten, allerdings wird der Schatz auch nur jeden zweiten Magnet erkannt. 
+Bei mehreren abwechselnd gedrehten Magneten gabt es zwar genug Magnetkraft zum Halten, allerdings erkannte der Sensor nur jeden zweiten Magneten.
 Eine gleiche Ausrichtung dagegen ist einfach zu erkennen, aber nicht mehr stark genug zum halten. 
 Daher musste von mehreren Magneten auf einen einzelnen, richtig orientierten Magneten gewechselt werden. 
 
+
 ### Lichtsensor
 Um die Grenzen des Spielfelds zu erkennen wurde ein Lichtsensor verbaut. Ein binäres Signal ist dabei ausreichend, die Lichtverhältnisse werden einmalig kalibriert.
-Eine Detektion ist auch bei 1cm verlässlich, für Feinjustierungen wurde ein Slot modelliert, der den Abstand zum Boden veränderbar macht. 
+Das linke Potentiometer stellt dabei die Empfindlichkeit ein, das rechte die Helligkeit der reflektierten LED. 
+Die verbaute rote LED zeigt Reflektionen an, ein leichtes Glimmen ist ein Zeichen für eine unzureichende Stromzufuhr und kann ein Indikator für einen Kabelbruch sein. 
+
+Eine Detektion ist bei Distanzen bis 1cm verlässlich, für Feinjustierungen wurde ein Slot modelliert, der den Abstand zum Boden veränderbar macht. 
 Um Timingprobleme bei langsamen Programmen zu vermeiden kann breiteres Tape verwendet werden, zusätzlich kann vom Sensor ein unterbrechender Interrupt ausgelöst werden. 
 Bei einem dunklen Boden wird helles Tape verwendet und der Sensorausgang invertiert. 
+
 
 ### Kompass
 Um eine genauere Ausrichtung beim Fahren zu ermöglichen wird ein Kompass verwendet. Hierfür wurde sich für den Chip `MPU6050` entschieden, da dieser weit verbreitet ist und eine I2C Schnittstelle bietet. 
@@ -241,10 +298,9 @@ Ein kleiner Bildschirm wäre mächtig, aber zu aufwendig anzusteuern gewesen.
 Einzelne LEDs sind einfach, brauchen aber viel Verdrahtung und sind stark beschränkt. 
 Ein Streifen einzeln addressierbarer RGB-LEDs (WS2812B) wurde als Mittelweg identifiziert. 
 
-In der Referenzimplementierung wurde eine Warnungsanzeige, ein Herzschlag und die Anzeige vom Status angezeigt, weitere Kandidaten waren Distanz, Winkel oder Geschwindigkeiten. 
-Gruppen können frei entscheiden was Sie anzeigen wollen, ein direkter Zugriff auf die LEDs ist möglich. 
+In der Referenzimplementierung wurde eine Warnungsanzeige, ein Herzschlag und die Anzeige vom Status angezeigt, in manchen Zuständen wurden außerdem die Distanz oder der Fortschritt dargestellt. 
 
-Verwendet wurde FastLED, hier wurde auch die globale Helligkeit limitiert um Überhitzungen zu vermeiden. 
+Als Anwendungsbibliothek wurde FastLED verwendet, hier wurde auch die globale Helligkeit limitiert um Überhitzungen zu vermeiden. 
 
 Die ideale Wandstärke, Passtoleranz und Form über den LEDs wurde experimentell bestimmt. 
 
@@ -294,7 +350,8 @@ Befestigung mit vorhandenen M2-Löchern
 Die Fertigung und Verwendung des Prototyps offenbarte in vielen Bereichen ein Optimierungspotential für das finale Fahrzeug. 
 Die für den Prototypen gedruckten Teile wurden vor allem auf Druckgeschwindigkeit optimiert und hatten nur eine geringe Druckauflösung, beide Aspekte wurden für das finale Modell auf Qualität optimiert. 
 
-Um einen konsistenten Stand zu erhalten wurden wurden alle notwendigen CAD Optimierungen bis zu einer Deadline am 15.7.2020 umgesetzt und anschließend die finalen Teile gedruckt. Danach anfallende kleinere Änderungen wurden nur noch im Modell angepasst und nicht mehr gefertigt. 
+Um einen konsistenten Stand zu erhalten wurden wurden alle notwendigen CAD Optimierungen bis zu einer Deadline am 15.7.2020 umgesetzt und anschließend die finalen Teile gedruckt. 
+Danach anfallende kleinere Änderungen wurden nur noch im Modell angepasst und nicht mehr gefertigt. 
 Die Karosserie wurde in Gelb gedruckt, um - passend zum Szenario - auf ein gelbes U-Boots anzuspielen. Der Druck der Karosserie benötigte 150g PLA und 13 Stunden Druckzeit.
 
 ![Foto Drucken](images/photo_print.jpg)
@@ -304,10 +361,32 @@ Zur finalen Fertigung gab es das erste persönliche Treffen, alle vorherigen Abs
 
 ![Explosionsbild](images/explosion.jpg)
 
-Bei den finalen gedruckten Teile fielen noch kosmetische Verbesserungsmöglichkeiten auf, wie die Tiefe der Inserts und eine Abrundung über den Motoren. Diese wurden im CAD Modell angepasst und anschließend als STL-Datei und veränderbarere STP-Datei exportiert.
+Bei Tests mit der finalen Karosserie viel auch ein zu hoher Winkel des Ultraschallsensors auf, wodurch der Schatz schwerer erkannt werden konnte. 
+Eine Neigung von etwa 2° nach unten hat die Detektion etwas verbessert, die Erhöhung des Schatzes hätte dessen Gewicht unnötig vergrößert und den Entwurf der Angel verkompliziert. 
+Außerdem fielen noch kosmetische Verbesserungsmöglichkeiten auf, wie die Tiefe der Inserts und eine Abrundung über den Motoren. 
+All diese Änderungen wurden im CAD Modell angepasst und die finalen Modelle als STL-Datei und veränderbarere STP-Datei exportiert.
+
+Um die Lesbarkeit des Logos zu erhöhen wurde außerdem eine schwarze Klebefolie ergänzt, die gleiche Folie wird auch verwendet um die Powerbank zu kennzeichnen.  
+
+![Logo Basic](images/robit_logo_basic.jpg)
+
+![Logo Tape](images/robit_tape.jpg)
+
 
 
 ## Milestone 6: Dokumentation
+
+### Laufzeitermittlung
+
+Um die maximale Laufzeit des Fahrzeugs zu ermitteln wurde zuerst der Verbrauch in verschiedenen Szenarien gemessen. 
+Der mit Abstand größte Verbraucher waren die Motoren, zweitrangig waren die LEDs, die Verarbeitungslogik war effektiv nicht mehr messbar. 
+Im Stillstand wurden so unter 0.1 Watt gemessen, beim Anfahren bis zu 4 Watt. 
+
+![Verbrauch](images/Verbrauch.jpg)
+
+Je nach Verfahren kann so bei einer Powerbank-Kapazität von 37 Wattstunden eine Lautzeit von über 12 Stunden erreicht werden. 
+Dies ist mehr als ausreichend für unsere Anwendung und macht Ladevorgänge während den Entwicklungszeiten optional. 
+
 
 ### Handbuch schreiben
 Um alle Erkenntnisse unserer Entwicklung und des Referenzprojekts zu erfassen wurde ein Handbuch für Lehrkräfte mit allen alle relevanten Informationen zur Durchführung des Projekts verfasst. 
