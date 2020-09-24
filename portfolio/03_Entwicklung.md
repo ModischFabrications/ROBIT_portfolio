@@ -15,7 +15,6 @@ Aufgaben wurden ursprünglich nach logischen Komponenten wie Angel, Sonar und Ge
 ### Definition
 Um die genaue Zielsetzung festzuhalten wurde ein initialer Vortrag vorbereitet, der die Zielsetzung des Projekts festhalten soll. 
 
-TODO https://docs.google.com/presentation/d/1X0VR1WAZExtkcRi5N46J-1ufT67DiJy896XK1zQV_ug
 
 Erstes Feedback hat alternative Implementierungen mit hängendem Aufbau statt Reifen eröffnet, der Vorschlag wurde allerdings aufgrund mechanischer Komplexität und geringer Flexibilität verworfen. 
 
