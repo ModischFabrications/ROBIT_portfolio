@@ -15,7 +15,6 @@ Aufgaben wurden ursprünglich nach logischen Komponenten wie Angel, Sonar und Ge
 ### Definition
 Um die genaue Zielsetzung festzuhalten wurde ein initialer Vortrag vorbereitet, der die Zielsetzung des Projekts festhalten soll. 
 
-TODO https://docs.google.com/presentation/d/1X0VR1WAZExtkcRi5N46J-1ufT67DiJy896XK1zQV_ug
 
 Erstes Feedback hat alternative Implementierungen mit hängendem Aufbau statt Reifen eröffnet, der Vorschlag wurde allerdings aufgrund mechanischer Komplexität und geringer Flexibilität verworfen. 
 
@@ -72,7 +71,7 @@ Vergleich verschiedener Systeme, Fokus auf Kollaboration, kostenloser Nutzung un
 Entscheidung für Fusion 360, da alle Erfahrungen haben und Kollaboration einfach ist. 
 
 #### Elektronik
-Die Schaltung wurde zuerst digital entworfen, bevor Sie real gefertigt wurde. 
+Die Schaltung wurde zuerst digital entworfen, bevor sie real gefertigt wurde. 
 Kandidaten waren KiCAD, EAGLE und Fritzing, letztere hat sich aufgrund der einfachen Visualisierung durchgesetzt. 
 EAGLE wäre aufgrund der engen Integration mit Fusion 360 interessant gewesen, war allerdings zu aufwendig für unsere Anwendung. 
 Falls Platinen professionell bestellt werden, wäre KiCad die bessere Wahl, bei unserer Eigenfertigung war dies allerdings nicht nötig. 
@@ -98,7 +97,7 @@ Bevor neue Teile gekauft wurden, wurden alle bereits im PIB-Labor vorhandenen Te
 
 Vor dem Entwurf des finalen Fahrzeugs wurden die vorhandenen Teile auf einem provisorischen Rahmen montiert und deren Kompatibilität sichergestellt.
 
-Es wurde zu Beginn eine Liste aller notwendigen Bauteile erstellt. Diese Liste wurde sukzessive erweitert, der finale Stand ist in [TODO Teileliste] dargestellt. 
+Es wurde zu Beginn eine Liste aller notwendigen Bauteile erstellt. Diese Liste wurde sukzessive erweitert, der finale Stand ist in [Teileliste](#teileliste) dargestellt. 
 
 Die restlichen Teile wurden online bestellt. Hierbei wurde auch auf die Lieferzeit geachtet, wobei deutsche Händler bevorzugt gewählt wurden.
 
@@ -128,15 +127,15 @@ Auch Lizenzbedingungen mussten eingehalten werden, weshalb sich letztendlich auf
 3. [Russo One](https://fonts.google.com/specimen/Russo+One)
 
 In der Theorie haben alle drei Fonts gut gepasst, daher wurde ein Testdruck mit diesen Fonts gemacht. Außerdem konnten so verschiedene Prägetiefen verglichen werden. 
-In [Vorderseite] ist gut zu erkennen das tiefere Prägungen mit 0.4mm statt 0.2mm einen besseren Kontrast ergeben, dies ist vor allem im "U" aus dem FAU-Logo zu sehen. 
+In [Vorderseite](#fonts_front) ist gut zu erkennen das tiefere Prägungen mit 0.4mm statt 0.2mm einen besseren Kontrast ergeben, dies ist vor allem im "U" aus dem FAU-Logo zu sehen. 
 
-![Vorderseite](images/fonts_front.jpg)
+![Vorderseite](images/fonts_front.jpg){#fonts_front}
 
 Um die Lesbarkeit auch auf einer rückseitigen Prägung zu gewährleisten wurde auf beiden Seiten getestet, auf der Rückseite ist der Vorteil einer tieferen Prägung sogar noch deutlicher zu erkennen. 
 
 ![Rückseite](images/fonts_back.jpg)
 
-Alle drei Fonts kamen gut zu Geltung, lezttendlich war unser einstimmiger Favorit aber [Bungee](https://fonts.google.com/specimen/Bungee).
+Alle drei Fonts kamen gut zu Geltung, letztendlich war unser einstimmiger Favorit aber [Bungee](https://fonts.google.com/specimen/Bungee).
 Da der Font nur Großbuchstaben enthält wurde der finale Projektname auf "ROBIT" festgelegt. 
 
 ### Integration der Logos
@@ -146,14 +145,14 @@ Ergänzend wurden auch das Logo der FAU und die Logos von den Gruppenmitgliedern
 
 Zuletzt wurde als *Easteregg* auch ein Verweis auf das Jahr und die aktuelle Studiensituation hinzugefügt. 
 
-Alle Grafiken wurden in Inkscape entworfen, in saubere, nicht überlagerte Flächen kombiniert und als svg geteilt. 
+Alle Grafiken wurden in Inkscape entworfen, in saubere, nicht überlagerte Flächen kombiniert und als SVG-Datei geteilt. 
 
 
 ## Milestone 3: Entwicklung
 
 ### Platine
 
-Wie in [Elektronik] beschrieben wurde die Elektronik mit Fritzing entworfen, dabei wurde auch eine Visualisierung der Komponenten erstellt um Schülern weitere Informationen zum Innenleben des Fahrzeugs zu bieten. 
+Wie in [Elektronik](#elektronik) beschrieben wurde die Elektronik mit Fritzing entworfen, dabei wurde auch eine Visualisierung der Komponenten erstellt um Schülern weitere Informationen zum Innenleben des Fahrzeugs zu bieten. 
 Die Platine wurde iterativ erweitert um Änderungen während der weiteren Entwicklung zu erfassen, die finale Version ist in [TODO Platinenbild] zu sehen. 
 
 TODO Platinenbild
@@ -166,9 +165,9 @@ Aus der Rundlaufzeit konnte leicht die Distanz (unter Annahme konstanter Schallg
 ![HC-SR04 Plot](images/HC-SR04_plot.png)
 
 Ein größeres Problem waren die Sonarquerschnitte: Je nach Winkel und Form des Objekts wurden die Ultraschallpulse nicht zurück zum Sensor reflektiert, das Objekt wurde dadurch unsichtbar. 
-[HC-SR04 Plot Rotation] zeigt die Messwerte eines rechteckigen Objekts das langsam rotiert wird. Die Maximalwerte stellen fehlende Rückgaben dar. 
+[HC-SR04 Plot Rotation](#SR04_plot_rotation) zeigt die Messwerte eines rechteckigen Objekts das langsam rotiert wird. Die Maximalwerte stellen fehlende Rückgaben dar. 
 
-![HC-SR04 Plot Rotation](images/HC-SR04_plot_rotation.png)
+![HC-SR04 Plot Rotation](images/HC-SR04_plot_rotation.png){#SR04_plot_rotation}
 
 Langsamere Drehungen haben durch eine feinere Auflösung zu mehr Detektionen geführt, genauso auch die Mittelung über mehr Messungen. 
 Die Begrenzung der maximalen Messlänge hat durch eine Verringerung der Fehldetektion von Wänden und Reflektionen weiter die Logik vereinfacht, führt aber auch zu einer Reduktion der effektiv nutzbaren Fläche. 
@@ -178,11 +177,11 @@ Die Begrenzung der maximalen Messlänge hat durch eine Verringerung der Fehldete
 
 Im Laufe der Entwicklung wurden mehrere Formen evaluiert: Zylindrische Formen waren winkelstabil, aber auch gleichbleibend unzuverlässig. 
 Rechteckige Querschnitte wurden direkt verworfen, da eine Detektion an den Ecken völlig unmöglich war. 
-Eine interessante Alternative war eine durch Radarprismen inspirierte komplexere Form ([Render Radarprisma]), die zwar nicht mehr realistisch, aber besser zu erkennen war. 
+Eine interessante Alternative war eine durch Radarprismen inspirierte komplexere Form ([Render Radarprisma](#render_radarprisma)), die zwar nicht mehr realistisch, aber besser zu erkennen war. 
 Die hier verwendeten Innenwinkel haben zusätzlich zur etwas besseren Winkelstabilität die Detektionsreichweite merklich verbessert. 
 Trotzdem ist die Erkennung frontal zum spitzen Winkel merklich schlechter als vor dem Innenwinkel. 
 
-![Render Radarprisma](images/render_radarprisma.png)
+![Render Radarprisma](images/render_radarprisma.png){#render_radarprisma}
 
 Daraus hat sich eine Modifikation des Zylinders durch kleine Reflektionskerben ergeben:
 
@@ -199,9 +198,9 @@ Außerdem wurde eine Einkerbung mit dazu passender Erhöhung entworfen, die ein 
 
 ![Einkerbung](images/notches.png)
 
-Der finale Entwurf des zylindrischen Schatzes ist damit in [Render Schatz Querschnitt] zu sehen. 
+Der finale Entwurf des zylindrischen Schatzes ist damit in [Render Schatz Querschnitt](#render_schatz_cut) zu sehen. 
 
-![Render Schatz Querschnitt](images/render_schatz_cut.png)
+![Render Schatz Querschnitt](images/render_schatz_cut.png){#render_schatz_cut}
 
 
 ### Angel
@@ -253,9 +252,9 @@ Der zentrale Bestandteil des Roboters ist die Karosserie, die alle Komponenten m
 
 ![Foto Karosserie Seitenansicht](images/render_carriage_bottom.png)
 
-Höhen und Ausrichtungen der Sensoren wurden mit Hilfe des Prototypen experimentell ermittelt oder einstellbar modelliert. Die Elektronik wurde in einer nach unten geöffneten Box unterhalb der Powerbank untergebracht und kann mit einem Deckel vor Berühren geschützt werden. 
+Höhen und Ausrichtungen der Sensoren wurden mit Hilfe des Prototypen experimentell ermittelt oder einstellbar modelliert. Die Elektronik wurde in einer nach unten geöffneten Box unterhalb der Powerbank untergebracht und kann mit einem [Deckel](#photo_cover) vor Berühren geschützt werden. 
 
-![Foto Deckel](images/photo_cover.jpg)
+![Foto Deckel](images/photo_cover.jpg){#photo_cover}
 
 Für eine bessere Wartbarkeit wurde bei Schraubverbindungen Aussparungen für Insert modelliert. Für die Kabelführung zum Powerbank wurden Aussparungen auf der Rückseite des Roboters modelliert, neben dran befindet sich ein Schalter, der den Strom der Motoren unterbricht um ein ungewolltes Bewegen beim Programmieren zu verhindern. 
 Als Stützrad wurde sich nach mehreren Tests für eine omnidirektionale Rolle aus einem Roll-On-Deodorant entschieden und eine Halterung für diese auch im CAD eingefügt. 
@@ -264,9 +263,9 @@ Nach einem Testdruck und einer Einpassung der Komponenten wurden noch kleinere �
 ![Render Karosserie Draufsicht](images/render_carriage_top.png)
 
 ### Implementierung der Logik
-Für die Modellierung des Programmablaufs wurde ein Zustandsdiagramm verwendet.
+Für die Modellierung des Programmablaufs wurde ein [Zustandsdiagramm](#state_chart) verwendet.
 
-![Prototyp des Progammablaufs](images/state_chart.png)
+![Prototyp des Progammablaufs](images/state_chart.png){#state_chart}
 
 Hierbei wurden Probleme, wie die kontinuierliche Aktualisierung der Sensoren, ausfindig gemacht und behoben. Anschließend wurde dieses Zustandsdiagramm mit Hilfe einer `switch` Anweisung in Programmcode umgesetzt und erweitert. 
 
@@ -281,7 +280,7 @@ Unsere eigenen Klassen wurden so konzipiert, dass sie mehr Funktionalität biete
 Den Klassen wurden Kurzbeschreibungen mit Informationen über das Level und die Verwendung im Header hinzugefügt.
 
 ### Entwicklung des Wrappers
-Um die Programmierung für Schüler zu vereinfachen wurden komplexe Sachverhalte abstrahiert und in verschiedene Level aufgeteilt, zu sehen in [Levels].
+Um die Programmierung für Schüler zu vereinfachen wurden komplexe Sachverhalte abstrahiert und in verschiedene Level aufgeteilt, zu sehen in [Aufteilung in Levels](#aufteilung-in-levels).
  
 Im einfachsten Fall wurden die Adressen der elektrischen Verbindungen fest kodiert, um eine versehentliche Zerstörung der Hardwarekomponenten zu vermeiden. 
 Hierfür wurden `setup()` Funktionen eingeführt, die der Schüler zu Beginn aufrufen muss. 
@@ -300,7 +299,7 @@ Ein Streifen einzeln addressierbarer RGB-LEDs (WS2812B) wurde als Mittelweg iden
 
 In der Referenzimplementierung wurde eine Warnungsanzeige, ein Herzschlag und die Anzeige vom Status angezeigt, in manchen Zuständen wurden außerdem die Distanz oder der Fortschritt dargestellt. 
 
-Als Anwendungsbibliothek wurde FastLED verwendet, hier wurde auch die globale Helligkeit limitiert um Überhitzungen zu vermeiden. 
+Als Anwendungsbibliothek wurde [FastLED](https://github.com/FastLED/FastLED) verwendet, hier wurde auch die globale Helligkeit limitiert um Überhitzungen zu vermeiden. 
 
 Die ideale Wandstärke, Passtoleranz und Form über den LEDs wurde experimentell bestimmt. 
 
@@ -357,7 +356,7 @@ Die Karosserie wurde in Gelb gedruckt, um - passend zum Szenario - auf ein gelbe
 ![Foto Drucken](images/photo_print.jpg)
 
 Die Bodenplatte wurde aus transparentem Acrylglas gefertigt. Hierfür wurden mit Hilfe eines selbst gebauten Lasercutters die Beschriftungen graviert und die Umrisse angezeichnet. Anschließend wurden diese Umrisse per Hand ausgeschnitten, da der Laser nicht genug Leistung für einen Schnitt durch die komplette Dicke des Materials hatte. 
-Zur finalen Fertigung gab es das erste persönliche Treffen, alle vorherigen Abstimmungen fanden den Umständen entsprechend online statt. Alle Teilnehmer haben ihre jeweiligen Komponenten zusammengetragen und individuellen Hinweise zu Komponenten erfasst. Vor dem Zusammenbau wurde ein Explosionsbild aller verwendeter Komponenten aufgenommen, um den vollen Umfang der Teileliste aus [Teileliste] auch bildlich zu erfassen. 
+Zur finalen Fertigung gab es das erste persönliche Treffen, alle vorherigen Abstimmungen fanden den Umständen entsprechend online statt. Alle Teilnehmer haben ihre jeweiligen Komponenten zusammengetragen und individuellen Hinweise zu Komponenten erfasst. Vor dem Zusammenbau wurde ein Explosionsbild aller verwendeter Komponenten aufgenommen, um den vollen Umfang der [Teileliste](#teileliste) auch bildlich zu erfassen. 
 
 ![Explosionsbild](images/explosion.jpg)
 
@@ -389,10 +388,10 @@ Dies ist mehr als ausreichend für unsere Anwendung und macht Ladevorgänge wäh
 
 
 ### Handbuch schreiben
-Um alle Erkenntnisse unserer Entwicklung und des Referenzprojekts zu erfassen wurde ein Handbuch für Lehrkräfte mit allen alle relevanten Informationen zur Durchführung des Projekts verfasst. 
+Um alle Erkenntnisse unserer Entwicklung und des Referenzprojekts zu erfassen wurde ein Handbuch für Lehrkräfte mit allen relevanten Informationen zur Durchführung des Projekts verfasst. 
 
 Wie beim Rest der Dokumentation wurde sich für `Markdown` als Auszeichnungssprache und `Pandoc` als Konvertierungswerkzeug entschieden. Somit können wir die bisherigen `Markdown` Notizen in ein mit `LaTeX` gesetztes PDF-Dokument umwandeln und so die Vorteile von beidem nutzen. 
-Um Dopplungen zu vermeiden wurde das Handbuch mit der Einleitung des Projekts vereinigt, zu finden in [TODO Einleitung]. In diesem wird das Szenario beschrieben, was die Zielgruppe ist und welche Lehrinhalte vermittelt werden. Außerdem sind hier die Level beschrieben, aus denen die Lehrkraft je nach den Vorkenntnissen der Gruppe einen passenden Schwierigkeitgrad auswählt.
+Um Dopplungen zu vermeiden wurde das Handbuch mit der Einleitung des Projekts vereinigt, zu finden in [Das Projekt ROBIT](#das-projekt-robit). In diesem wird das Szenario beschrieben, was die Zielgruppe ist und welche Lehrinhalte vermittelt werden. Außerdem sind hier die Level beschrieben, aus denen die Lehrkraft je nach den Vorkenntnissen der Gruppe einen passenden Schwierigkeitsgrad auswählt.
  
 Die ausführenden Gruppenmitglieder werden durch die in Kommentaren und Header-Beschreibungen der ihnen zur Verfügung stehenden Klassen weiter informiert.
 
