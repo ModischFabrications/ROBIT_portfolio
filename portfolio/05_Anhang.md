@@ -1,9 +1,3 @@
-
-
-
-
-
-\pagebreak
 ## Teileliste
 
 | Bauteil | deutscher Händler | internationaler Händler
