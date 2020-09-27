@@ -60,7 +60,7 @@ Die Platform `mBlock` selbst ist ein interessantes Konzept und für kleine Proje
 
 Festlegung auf textbasiertes Programmieren, um realen Bezug zu fördern. C/C++ als Basiswissen. MicroPython evaluiert, aber nicht reif genug für unsere Anwendung und nur auf wenig Plattformen verwendbar.
 
-AVR als Basisarchitektur, da NXT (Mindstorms) sich nur schlecht mit offener Hardware verbinden lässt. ESP\* als gängige Alternative, derzeit kein Bedarf für Vernetzung identifiziert und daher übertrieben. 
+AVR als Basisarchitektur, da NXT (Mindstorms) sich nur schlecht mit offener Hardware verbinden lässt. ESP8266 oder ESP32 als gängige Alternative, derzeit kein Bedarf für Vernetzung identifiziert und daher übertrieben. 
 
 Arduino IDE als Klassiker, allerdings veraltet und mit schlechter Integration von Libraries. PlattformIO als bessere Alternative. 
 
@@ -105,10 +105,10 @@ Die restlichen Teile wurden online bestellt. Hierbei wurde auch auf die Lieferze
 
 Der Verbrauch und die Geschwindigkeit der Motoren wurden bei unterschiedlichen Spannungen getestet. Die Drehgeschwindigkeit bei 5V wurde als ausreichend erachtet, daher konnte die Powerbank direkt und ohne einen Spannungswandler verwendet werden. 
 
-Encoder war in Überlegung, fertige Motoren waren allerdings einfacher zu verwenden. 
--> großer Fehler, da kacke! enge Regelung von Drehzahl und Leistung hätte Bewegung einfacher gemacht. 
+Encoder war in Überlegung, fertige Motoren waren allerdings einfacher zu verwenden.
+Rückblicken hätten wir Motoren mit Encodern verbauen sollen, da dies eine enge Regelung von Drehzahl und Leistung ermöglicht hätte und eine gleichförmige und somit gerade Bewegung einfacher gemacht hätte. 
 
-Kompass als alternative Erfassung von Richtungen, erlaubt ebenfalls Kompensation von Drifts. 
+Der Kompass wurde als alternative Erfassung der Richtungen verwendet und erlaubt ebenfalls die Kompensation von Drifts. 
 
 Für die Stromversorgung wurde eine Powerbank mit zwei unabhängigen USB-Ausgängen gewählt. Diese ist herausnehmbar und lässt sich komfortabel über den Micro-USB-Standard aufladen. Außerdem bieten die zwei unabhängigen Ausgänge die Möglichkeit, die Stromzufuhr der Motoren von der Stromversorgung des Microcontrollers und der Sensoren zu trennen. Somit werden Messwerte nicht durch Spannungsschwankung der Motoren beeinflusst.
 
@@ -311,35 +311,27 @@ Runde Lichtkanäle haben den Lichtkegel etwas runder gemacht, die zusätzlich be
 
 
 ### Platine
-
-Konzept für 4x6cm Lochrasterplatine
-
-Entwurf mit Fritzing
-
-
-
-Gyro mittig zwischen Motoren um Drehung richtig zu erkennen.
-
-Je ein Treiber pro Motor.
-
-USB-Steckverbindungen
-
-![Platine Frontansicht](images/pcb_front_test.jpg)
-
-![Platine Rückansicht](images/pcb_back_test.jpg)
-
-Befestigung mit vorhandenen M2-Löchern
+Als Hauptplatine wurde eine 4x6cm Lochrasterplatine gewählt, um die Baugröße möglichst kompakt zu halten.
+Der Entwurf der elektrischen Komponenten wurde mit Hilfe der Open-Source Software `Fritzing` durchgeführt.
 
 ![Schaltplan](images/schematic.png)
 
 ![Schaltplan](images/schematic_graphical.png)
 
+Der Kompass-Sensor wurde auf der Achse mittig zwischen den Motoren platziert, um keine Winkelkorrektur berechnen zu müssen.  
+Der Microcontroller, der Kompass-Sensor und der Motortreiber wurden mit Stiftleisten versehen und auf Buchsenleisten gesteckt, um die Wartung und den Austausch dieser Komponenten zu erleichtern.
+Auch die weiteren Sensoren wurden über Stiftleisten und Buchsenleisten verbunden und sind so absteckbar.
+Ein Kondensator wurde parallel zur Stromversorgung verlötet um Spannungsschwankungen auszugleichen.
+Der Motortreiber wurde mit der Unterseite nach oben verbaut um der Schraubklemme genügend Platz zu lassen.
+Der Microcontroller wurde so orientiert, dass die Micro-USB-Buchse zur Rückseite des Fahrzeugs zeigt, so reicht ein kurzes USB-Kabel aus und Interferenzen durch die Motortreiber werden minimiert.
 
+![Platine Frontansicht](images/pcb_front_test.jpg)
 
+Für die Leiterbahnen wurden Litzenleitungen mit einer Stärke von 20 AWG auf der Rückseite der Platine gelötet. Die leistungsführenden Leitungen zu den Motoren wurden zusätzlich durch Lötbrücken verstärkt.
 
+![Platine Rückansicht](images/pcb_back_test.jpg)
 
-
-
+Um die Platine im Gehäuse zu fixieren, wurden die vorhandenen 4 M2-Löcher in den Ecken der Lochrasterplatine verwendet. Im Gehäuse wurden entsprechende M2-Gewindeeinsätze und Abstandhalter eingefügt.
 
 ![Einbau](images/pcb_assembly.jpg)
 
