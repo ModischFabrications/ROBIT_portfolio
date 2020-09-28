@@ -4,7 +4,7 @@
 
 Die Entwicklung lässt sich in 7 Milestones über einen Verlauf von 15 Wochen unterteilen.
 
-Aufgaben wurden ursprünglich nach logischen Komponenten wie Angel, Sonar und Gehäuse unterteilt, diese Aufteilung war in der Praxis aber nur schwer einzuhalten. Daher wurden viele Aufgaben in der Umsetzung eher nach der behandelten Disziplinen gruppiert. Genauso waren auch viele Arbeiten über mehrere Milestones verteilt, die hier präsentierte Reihenfolge entspricht eher einer logischen als chronologischen Ordnung. 
+Aufgaben wurden ursprünglich nach logischen Komponenten wie Angel, Sonar und Gehäuse unterteilt, diese Aufteilung war in der Praxis aber nur schwer einzuhalten. Daher wurden viele Aufgaben in der Umsetzung eher nach dem behandelten Disziplinen gruppiert. Genauso waren auch viele Arbeiten über mehrere Milestones verteilt, die hier präsentierte Reihenfolge entspricht eher einer logischen als chronologischen Ordnung. 
 
 ## Milestone 1: Orientierung
 
@@ -17,10 +17,10 @@ Erstes Feedback hat alternative Implementierungen mit hängendem Aufbau statt Re
 *Use-Cases:*
 
 1. Als Lehrer will ich das Gerät einfach auf den Ursprungszustand zurücksetzen
-1. Als Lehrer will ich wenig Vorbereitungsaufwand (Akkus laden, ...) wie möglich haben
+1. Als Lehrer will ich so wenig Vorbereitungsaufwand (Akkus laden, ...) wie möglich haben
 1. Als Lehrer will ich so wenig wie möglich auf Rechnern installieren müssen
 
-1. Als Schüler will ich ein klares definiertes Ziel
+1. Als Schüler will ich ein klar definiertes Ziel haben
 1. Als Schüler will ich live testen können
 1. Als Schüler will ich ohne viel Dokumentation entwickeln
 1. Als Schüler will keine externen Bibliotheken suchen und einbinden
@@ -54,7 +54,9 @@ Die Platform `mBlock` selbst ist ein interessantes Konzept und für kleine Proje
 
 
 
-Festlegung auf textbasiertes Programmieren, um realen Bezug zu fördern. C/C++ als Basiswissen. MicroPython evaluiert, aber nicht reif genug für unsere Anwendung und nur auf wenig Plattformen verwendbar.
+Festlegung auf textbasiertes Programmieren, um realen Bezug zu fördern. C/C++ als Basiswissen. 
+
+MicroPython evaluiert, aber nicht reif genug für unsere Anwendung und nur auf wenig Plattformen verwendbar.
 
 AVR als Basisarchitektur, da NXT (Mindstorms) sich nur schlecht mit offener Hardware verbinden lässt. ESP8266 oder ESP32 als gängige Alternative, derzeit kein Bedarf für Vernetzung identifiziert und daher übertrieben. 
 
@@ -92,7 +94,7 @@ Aufgabenpakete wurden laufend erfasst, zugeordnet und überwacht, Abstimmungen f
 
 ### Beschaffung der Komponenten
 
-Bevor neue Teile gekauft wurden, wurden alle bereits im DDI-Labor vorhandenen Teile gesichtet. Es konnten zwei Motoren inklusive Räder und einige Sensor wiederverwendet werden.
+Bevor neue Teile gekauft wurden, wurden alle bereits im DDI-Labor vorhandenen Teile gesichtet. Es konnten zwei Motoren inklusive Räder und einige Sensoren wiederverwendet werden.
 
 Vor dem Entwurf des finalen Fahrzeugs wurden die vorhandenen Teile auf einem provisorischen Rahmen montiert und deren Kompatibilität sichergestellt.
 
@@ -112,7 +114,7 @@ Für die Stromversorgung wurde eine Powerbank mit zwei unabhängigen USB-Ausgän
 
 Im Laufe der Bestell- und Testphase wurden für alle Bauteile eigene 3D-Modelle erstellt, um deren Passung im finalen Fahrzeug zu gewährleisten. Viele Komponenten, vor allem die Sensoren, konnten als frei verfügbare Modelle angepasst und eingebunden werden.
 
-Außerdem wurde sich auf Coding-Guidelines geeinigt, die den Programmierstil ähnlich halten und den Programmfluss übersichtlich gestallten.
+Außerdem wurde sich auf Coding-Guidelines geeinigt, die den Programmierstil ähnlich halten und den Programmfluss übersichtlich gestalten.
 
 ### Gestaltung der Texte
 
@@ -133,12 +135,12 @@ Um die Lesbarkeit auch auf einer rückseitigen Prägung zu gewährleisten wurde 
 
 ![Rückseite](images/fonts_back.jpg)
 
-Alle drei Fonts kamen gut zu Geltung, letztendlich war unser einstimmiger Favorit aber [Bungee](https://fonts.google.com/specimen/Bungee).
-Da der Font nur Großbuchstaben enthält wurde der finale Projektname auf "ROBIT" festgelegt. 
+Alle drei Fonts kamen gut zur Geltung, letztendlich war unser einstimmiger Favorit aber [Bungee](https://fonts.google.com/specimen/Bungee).
+Da der Font nur Großbuchstaben enthält, wurde der finale Projektname auf "ROBIT" festgelegt. 
 
 ### Integration der Logos
 
-Um die Zugehörigkeit aller Komponenten zum Projekt zu zeigen wurde alles mit dem zuvor entworfenen Logo markiert. 
+Um die Zugehörigkeit aller Komponenten zum Projekt zu zeigen, wurde alles mit dem zuvor entworfenen Logo markiert. 
 Ergänzend wurden auch das Logo der FAU und die Logos von den Gruppenmitgliedern hinzugefügt, um Herkunft und Autor zu kennzeichnen. 
 
 Zuletzt wurde als *Easteregg* auch ein Verweis auf das Jahr und die aktuelle Studiensituation hinzugefügt. 
@@ -156,7 +158,7 @@ Aus der Rundlaufzeit konnte leicht die Distanz (unter Annahme konstanter Schallg
 ![HC-SR04 Plot](images/HC-SR04_plot.png)
 
 Ein größeres Problem waren die Sonarquerschnitte: Je nach Winkel und Form des Objekts wurden die Ultraschallpulse nicht zurück zum Sensor reflektiert, das Objekt wurde dadurch unsichtbar. 
-[HC-SR04 Plot Rotation](#SR04_plot_rotation) zeigt die Messwerte eines rechteckigen Objekts das langsam rotiert wird. Die Maximalwerte stellen fehlende Rückgaben dar. 
+[HC-SR04 Plot Rotation](#SR04_plot_rotation) zeigt die Messwerte eines rechteckigen Objekts, das langsam rotiert wird. Die Maximalwerte stellen fehlende Rückgaben dar. 
 
 ![HC-SR04 Plot Rotation](images/HC-SR04_plot_rotation.png){#SR04_plot_rotation}
 
@@ -195,28 +197,28 @@ Der finale Entwurf des zylindrischen Schatzes ist damit in [Render Schatz Quersc
 
 
 ### Angel
-Es wurden verschiedene Servos, Angelmechanismen und Angellänge getestet. Da der Schatz klein und leicht ist, wurde sich für einen Mini-Servo mit Metallgetriebe entschieden. Ein Angelmechanismen mit nur einem Drehpunkt ist einfacher und hat keine Nachteile, demnach wurde dieser auch im CAD umgesetzt. 
+Es wurden verschiedene Servos, Angelmechanismen und Angellänge getestet. Da der Schatz klein und leicht ist, wurde sich für einen Mini-Servo mit Metallgetriebe entschieden. Ein Angelmechanismus mit nur einem Drehpunkt ist einfacher und hat keine Nachteile, demnach wurde dieser auch im CAD umgesetzt. 
 
 ![Angel Prototyp](images/angel_prototyp.jpg)
 
 Nach mehreren Design Iterationen wurde sich auf einen Aufbau geeinigt, bei dem sich im Kopf der Angel eine Unterlegscheibe und der Hall-Sensor direkt darüber befindet. Die Kabel wurden durch einen Kanal im Angelarm zum Roboter geführt und mit Schrumpfschlauch fixiert. Für eine bessere Druckbarkeit wurde die Abdeckung vom Hallsensor als einzelnes Teil modelliert, es enthält außerdem Aussparungen für die Zustands-LED und das Potentiometer zum Einstellen der Empfindlichkeit des Hallsensors. 
 
-Die Halterung für den Servo und den LED-Streifen wurde als zusätzliches Bauteil modelliert. Dies vereinfacht den Druck und das Zusammensetzten. Die Servo zum Bewegen den Angel wurde so fixiert, dass er flach auf der Abdeckung aufliegt und mit nur einer Schraube im 3D-Druck in Position gehalten wurde. Später wurde ein kurzer LED-Streifen zu Statusanzeige in dieser Halterung entworfen und eingebaut. Hierfür wurde der Streifen mit 10 LEDs im Modell ausgespart und ein extra Kanal für die Kabel gelassen.
+Die Halterung für den Servo und den LED-Streifen wurde als zusätzliches Bauteil modelliert. Dies vereinfacht den Druck und das Zusammensetzen. Die Servo zum Bewegen den Angel wurde so fixiert, dass sie flach auf der Abdeckung aufliegt und mit nur einer Schraube im 3D-Druck in Position gehalten wurde. Später wurde ein kurzer LED-Streifen zur Statusanzeige in dieser Halterung entworfen und eingebaut. Hierfür wurde der Streifen mit 10 LEDs im Modell ausgespart und ein extra Kanal für die Kabel gelassen.
 
 Bei der Ansteuerung des Servos wurde festgestellt, dass bei der Nutzung von PWM-Pins für die DC-Motoren und dem Servo die Anzahl der benötigten Timer nicht ausreichen, also wurden die Pins für die Motoren geändert.
 
 ### Magnetsensor
 Das Aufheben des Schatzes ist nicht zuverlässig genug um blind gemacht zu werden, daher war es notwendig einen Sensor zu verwenden. 
 Unsere Entscheidung fiel auf den Einbau eines Magneten im Schatz, daher konnte ein Magnetsensor verwendet werden. 
-Es wurde überlegt den Sensor von der Schaltung zu trennen um die Angel kompakter zu machen, dies wurde zugunsten der Signalqualität verworfen. 
+Es wurde überlegt den Sensor von der Schaltung zu trennen, um die Angel kompakter zu machen, dies wurde zugunsten der Signalqualität verworfen. 
 
 Der Sensor liefert ein binäres Signal zurück, das per Potentiometer kalibriert werden kann, die eingestellte Schaltschwelle schaltet erst nachdem der Schatz zur Angel gesprungen ist. 
 Im Uhrzeigersinn gedreht wird der Sensor empfindlicher. Die angelegte Spannung hat ebenfalls einen großen Einfluss auf die Empfindlichkeit, 
 daher sollten Kalibrierungen nur mit Verbindung zur Powerbank und laufendem Motor vorgenommen werden. 
 
 Problem unseres Sensors ist die Polarität, da das Magnetfeld nur in eine Richtung erkannt wird. 
-Bei mehreren abwechselnd gedrehten Magneten gabt es zwar genug Magnetkraft zum Halten, allerdings erkannte der Sensor nur jeden zweiten Magneten.
-Eine gleiche Ausrichtung dagegen ist einfach zu erkennen, aber nicht mehr stark genug zum halten. 
+Bei mehreren abwechselnd gedrehten Magneten gab es zwar genug Magnetkraft zum Halten, allerdings erkannte der Sensor nur jeden zweiten Magneten.
+Eine gleiche Ausrichtung dagegen ist einfach zu erkennen, aber nicht mehr stark genug um zu halten. 
 Daher musste von mehreren Magneten auf einen einzelnen, richtig orientierten Magneten gewechselt werden. 
 
 
@@ -231,10 +233,10 @@ Bei einem dunklen Boden wird helles Tape verwendet und der Sensorausgang inverti
 
 
 ### Kompass
-Um eine genauere Ausrichtung beim Fahren zu ermöglichen wird ein Kompass verwendet. Hierfür wurde sich für den Chip `MPU6050` entschieden, da dieser weit verbreitet ist und eine I2C Schnittstelle bietet. 
-Da es sich bei dem Sensor um einen Gyrosensor handelt muss für die Berechnung eines absoluten Winkels eine regelmäßige Aktualisierung stattfinden. 
+Um eine genauere Ausrichtung beim Fahren zu ermöglichen, wird ein Kompass verwendet. Hierfür wurde sich für den Chip `MPU6050` entschieden, da dieser weit verbreitet ist und eine I2C Schnittstelle bietet. 
+Da es sich bei dem Sensor um einen Gyrosensor handelt, muss für die Berechnung eines absoluten Winkels eine regelmäßige Aktualisierung stattfinden. 
 
-Beide getestete Sensoren haben ein Fehlverhalten gezeigt, bei dem der Sensor kurz nach dem Initialisieren falsche Werte liefert. Sobald ein solches Fehlverhalten durch unplausibel veränderte Werte festgestellt wird, wird der Sensor durch ein Zurücksetzten neu initialisiert. 
+Beide getestete Sensoren haben ein Fehlverhalten gezeigt, bei dem der Sensor kurz nach dem Initialisieren falsche Werte liefert. Sobald ein solches Fehlverhalten durch unplausibel veränderte Werte festgestellt wird, wird der Sensor durch ein Zurücksetzen neu initialisiert. 
 Es wurde die Bibliothek `MPU6050_tockn` gewählt, da diese eine Offset Kalibrierung und einen fortlaufenden Winkel bietet. 
 
 
@@ -247,7 +249,7 @@ Höhen und Ausrichtungen der Sensoren wurden mit Hilfe des Prototypen experiment
 
 ![Foto Deckel](images/photo_cover.jpg){#photo_cover}
 
-Für eine bessere Wartbarkeit wurde bei Schraubverbindungen Aussparungen für Insert modelliert. Für die Kabelführung zum Powerbank wurden Aussparungen auf der Rückseite des Roboters modelliert, neben dran befindet sich ein Schalter, der den Strom der Motoren unterbricht um ein ungewolltes Bewegen beim Programmieren zu verhindern. 
+Für eine bessere Wartbarkeit wurden bei Schraubverbindungen Aussparungen für Insert modelliert. Für die Kabelführung zur Powerbank wurden Aussparungen auf der Rückseite des Roboters modelliert, nebendran befindet sich ein Schalter, der den Strom der Motoren unterbricht, um ein ungewolltes Bewegen beim Programmieren zu verhindern. 
 Als Stützrad wurde sich nach mehreren Tests für eine omnidirektionale Rolle aus einem Roll-On-Deodorant entschieden und eine Halterung für diese auch im CAD eingefügt. 
 Nach einem Testdruck und einer Einpassung der Komponenten wurden noch kleinere Änderungen vorgenommen. Auch eine Personalisierung durch eigene Logos auf der Karosserie wurde hinzugefügt.
 
@@ -276,7 +278,7 @@ Um die Programmierung für Schüler zu vereinfachen wurden komplexe Sachverhalte
 Im einfachsten Fall wurden die Adressen der elektrischen Verbindungen fest kodiert, um eine versehentliche Zerstörung der Hardwarekomponenten zu vermeiden. 
 Hierfür wurden `setup()` Funktionen eingeführt, die der Schüler zu Beginn aufrufen muss. 
 
-Weiterhin wurden Grenzwerte eingehalten wie die Reichweite des Servos. 
+Weiterhin wurden Grenzwerte eingehalten, wie die Reichweite des Servos. 
 In diesem Zug wurde auch die Reichweite des Sonars künstlich begrenzt, um das Risiko unsauberer Detektionen zu reduzieren. 
 
 Umrechnungen von Raddurchmesser, Geschwindigkeit und gefahrener Distanz wurden evaluiert, waren in der Praxis allerdings zu variabel und wurden verworfen. 
@@ -290,14 +292,14 @@ Ein Streifen einzeln addressierbarer RGB-LEDs (WS2812B) wurde als Mittelweg iden
 
 In der Referenzimplementierung wurde eine Warnungsanzeige, ein Herzschlag und die Anzeige vom Status angezeigt, in manchen Zuständen wurden außerdem die Distanz oder der Fortschritt dargestellt. 
 
-Als Anwendungsbibliothek wurde [FastLED](https://github.com/FastLED/FastLED) verwendet, hier wurde auch die globale Helligkeit limitiert um Überhitzungen zu vermeiden. 
+Als Anwendungsbibliothek wurde [FastLED](https://github.com/FastLED/FastLED) verwendet, hier wurde auch die globale Helligkeit limitiert, um Überhitzungen zu vermeiden. 
 
 Die ideale Wandstärke, Passtoleranz und Form über den LEDs wurde experimentell bestimmt. 
 
 ![LED Drucktest](images/led_thickness.png)
 
-Selbst bei schwarzem Filament kamen bei 0.2mm Dicke noch genug Licht durch, beim verwendeten gelben Filament konnte die Dicke sogar 
-auf 0.4mm erhöht werden um die Form der LEDs im ausgeschalteten Zustand besser zu verwischen. 
+Selbst bei schwarzem Filament kam bei 0.2mm Dicke noch genug Licht durch, beim verwendeten gelben Filament konnte die Dicke sogar 
+auf 0.4mm erhöht werden, um die Form der LEDs im ausgeschalteten Zustand besser zu verwischen. 
 Runde Lichtkanäle haben den Lichtkegel etwas runder gemacht, die zusätzlich benötigte Tiefe war dieser Vorteil nicht wert. 
 
 
@@ -306,17 +308,17 @@ Zu Beginn wurde erstmal eine provisorische Platine gefertigt um Grundfunktionen 
 
 Als Hauptplatine wurde eine 4x6cm Lochrasterplatine gewählt, um die Baugröße möglichst kompakt zu halten.
 Der Entwurf der elektrischen Komponenten wurde mit Hilfe der Open-Source Software [Fritzing](https://fritzing.org) durchgeführt.
-Dabei wurde auch eine Visualisierung der Komponenten erstellt um Schülern weitere Informationen zum Innenleben des Fahrzeugs zu bieten. 
+Dabei wurde auch eine Visualisierung der Komponenten erstellt, um Schülern weitere Informationen zum Innenleben des Fahrzeugs zu bieten. 
 
 ![Schaltplan](images/schematic.png)
 
 ![Schaltplan](images/schematic_graphical.png)
 
-Der Kompass-Sensor wurde auf der Achse mittig zwischen den Motoren platziert, um keine Winkelkorrektur berechnen zu müssen.  
+Der Kompass-Sensor wurde auf der Achse mittig zwischen den Motoren platziert, um keine Winkelkorrektur berechnen zu müssen. 
 Der Microcontroller, der Kompass-Sensor und der Motortreiber wurden mit Stiftleisten versehen und auf Buchsenleisten gesteckt, um die Wartung und den Austausch dieser Komponenten zu erleichtern.
 Auch die weiteren Sensoren wurden über Stiftleisten und Buchsenleisten verbunden und sind so absteckbar.
-Ein Kondensator wurde parallel zur Stromversorgung verlötet um Spannungsschwankungen auszugleichen.
-Der Motortreiber wurde mit der Unterseite nach oben verbaut um der Schraubklemme genügend Platz zu lassen.
+Ein Kondensator wurde parallel zur Stromversorgung verlötet, um Spannungsschwankungen auszugleichen.
+Der Motortreiber wurde mit der Unterseite nach oben verbaut, um der Schraubklemme genügend Platz zu lassen.
 Der Microcontroller wurde so orientiert, dass die Micro-USB-Buchse zur Rückseite des Fahrzeugs zeigt, so reicht ein kurzes USB-Kabel aus und Interferenzen durch die Motortreiber werden minimiert.
 
 ![Platine Frontansicht](images/pcb_front_test.jpg)
@@ -335,23 +337,23 @@ Um die Platine im Gehäuse zu fixieren, wurden die vorhandenen 4 M2-Löcher in d
 Die Fertigung und Verwendung des Prototyps offenbarte in vielen Bereichen ein Optimierungspotential für das finale Fahrzeug. 
 Die für den Prototypen gedruckten Teile wurden vor allem auf Druckgeschwindigkeit optimiert und hatten nur eine geringe Druckauflösung, beide Aspekte wurden für das finale Modell auf Qualität optimiert. 
 
-Um einen konsistenten Stand zu erhalten wurden wurden alle notwendigen CAD Optimierungen bis zu einer Deadline am 15.7.2020 umgesetzt und anschließend die finalen Teile gedruckt. 
+Um einen konsistenten Stand zu erhalten, wurden alle notwendigen CAD Optimierungen bis zu einer Deadline am 15.7.2020 umgesetzt und anschließend die finalen Teile gedruckt. 
 Danach anfallende kleinere Änderungen wurden nur noch im Modell angepasst und nicht mehr gefertigt. 
 Die Karosserie wurde in Gelb gedruckt, um - passend zum Szenario - auf ein gelbes U-Boots anzuspielen. Der Druck der Karosserie benötigte 150g PLA und 13 Stunden Druckzeit.
 
 ![Foto Drucken](images/photo_print.jpg)
 
 Die Bodenplatte wurde aus transparentem Acrylglas gefertigt. Hierfür wurden mit Hilfe eines selbst gebauten Lasercutters die Beschriftungen graviert und die Umrisse angezeichnet. Anschließend wurden diese Umrisse per Hand ausgeschnitten, da der Laser nicht genug Leistung für einen Schnitt durch die komplette Dicke des Materials hatte. 
-Zur finalen Fertigung gab es das erste persönliche Treffen, alle vorherigen Abstimmungen fanden den Umständen entsprechend online statt. Alle Teilnehmer haben ihre jeweiligen Komponenten zusammengetragen und individuellen Hinweise zu Komponenten erfasst. Vor dem Zusammenbau wurde ein Explosionsbild aller verwendeter Komponenten aufgenommen, um den vollen Umfang der [Teileliste](#teileliste) auch bildlich zu erfassen. 
+Zur finalen Fertigung gab es das erste persönliche Treffen, alle vorherigen Abstimmungen fanden den Umständen entsprechend online statt. Alle Teilnehmer haben ihre jeweiligen Komponenten zusammengetragen und individuelle Hinweise zu Komponenten erfasst. Vor dem Zusammenbau wurde ein Explosionsbild aller verwendeter Komponenten aufgenommen, um den vollen Umfang der [Teileliste](#teileliste) auch bildlich zu erfassen. 
 
 ![Explosionsbild](images/explosion.jpg)
 
-Bei Tests mit der finalen Karosserie viel auch ein zu hoher Winkel des Ultraschallsensors auf, wodurch der Schatz schwerer erkannt werden konnte. 
+Bei Tests mit der finalen Karosserie fiel auch ein zu hoher Winkel des Ultraschallsensors auf, wodurch der Schatz schwerer erkannt werden konnte. 
 Eine Neigung von etwa 2° nach unten hat die Detektion etwas verbessert, die Erhöhung des Schatzes hätte dessen Gewicht unnötig vergrößert und den Entwurf der Angel verkompliziert. 
 Außerdem fielen noch kosmetische Verbesserungsmöglichkeiten auf, wie die Tiefe der Inserts und eine Abrundung über den Motoren. 
-All diese Änderungen wurden im CAD Modell angepasst und die finalen Modelle als STL-Datei und veränderbarere STP-Datei exportiert.
+All diese Änderungen wurden im CAD Modell angepasst und die finalen Modelle als STL-Datei und veränderbare STP-Datei exportiert.
 
-Um die Lesbarkeit des Logos zu erhöhen wurde außerdem eine schwarze Klebefolie ergänzt, die gleiche Folie wird auch verwendet um die Powerbank zu kennzeichnen.  
+Um die Lesbarkeit des Logos zu erhöhen, wurde außerdem eine schwarze Klebefolie ergänzt, die gleiche Folie wird auch verwendet, um die Powerbank zu kennzeichnen. 
 
 ![Logo Basic](images/robit_logo_basic.jpg)
 
@@ -363,22 +365,22 @@ Um die Lesbarkeit des Logos zu erhöhen wurde außerdem eine schwarze Klebefolie
 
 ### Laufzeitermittlung
 
-Um die maximale Laufzeit des Fahrzeugs zu ermitteln wurde zuerst der Verbrauch in verschiedenen Szenarien gemessen. 
-Der mit Abstand größte Verbraucher waren die Motoren, zweitrangig waren die LEDs, die Verarbeitungslogik war effektiv nicht mehr messbar. 
+Um die maximale Laufzeit des Fahrzeugs zu ermitteln, wurde zuerst der Verbrauch in verschiedenen Szenarien gemessen. 
+Die mit Abstand größten Verbraucher waren die Motoren, zweitrangig waren die LEDs, die Verarbeitungslogik war effektiv nicht mehr messbar. 
 Im Stillstand wurden so unter 0.1 Watt gemessen, beim Anfahren bis zu 4 Watt. 
 
 ![Verbrauch](images/Verbrauch.jpg)
 
-Je nach Verfahren kann so bei einer Powerbank-Kapazität von 37 Wattstunden eine Lautzeit von über 12 Stunden erreicht werden. 
+Je nach Verfahren kann so bei einer Powerbank-Kapazität von 37 Wattstunden eine Laufzeit von über 12 Stunden erreicht werden. 
 Dies ist mehr als ausreichend für unsere Anwendung und macht Ladevorgänge während den Entwicklungszeiten optional. 
 
 
 ### Handbuch schreiben
-Um alle Erkenntnisse unserer Entwicklung und des Referenzprojekts zu erfassen wurde ein Handbuch für Lehrkräfte mit allen relevanten Informationen zur Durchführung des Projekts verfasst. 
+Um alle Erkenntnisse unserer Entwicklung und des Referenzprojekts zu erfassen, wurde ein Handbuch für Lehrkräfte mit allen relevanten Informationen zur Durchführung des Projekts verfasst. 
 
 Wie beim Rest der Dokumentation wurde sich für `Markdown` als Auszeichnungssprache und `Pandoc` als Konvertierungswerkzeug entschieden. Somit können wir die bisherigen `Markdown` Notizen in ein mit `LaTeX` gesetztes PDF-Dokument umwandeln und so die Vorteile von beidem nutzen. 
-Um Dopplungen zu vermeiden wurde das Handbuch mit der Einleitung des Projekts vereinigt, zu finden in [Das Projekt ROBIT](#das-projekt-robit). In diesem wird das Szenario beschrieben, was die Zielgruppe ist und welche Lehrinhalte vermittelt werden. Außerdem sind hier die Level beschrieben, aus denen die Lehrkraft je nach den Vorkenntnissen der Gruppe einen passenden Schwierigkeitsgrad auswählt.
+Um Dopplungen zu vermeiden, wurde das Handbuch mit der Einleitung des Projekts vereinigt, zu finden in [Das Projekt ROBIT](#das-projekt-robit). In diesem wird das Szenario und die Zielgruppe beschrieben und welche Lehrinhalte vermittelt werden. Außerdem sind hier die Level beschrieben, aus denen die Lehrkraft je nach den Vorkenntnissen der Gruppe einen passenden Schwierigkeitsgrad auswählt.
  
-Die ausführenden Gruppenmitglieder werden durch die in Kommentaren und Header-Beschreibungen der ihnen zur Verfügung stehenden Klassen weiter informiert.
+Die ausführenden Gruppenmitglieder werden durch die in Kommentaren und Header-Beschreibungen, der ihnen zur Verfügung stehenden Klassen, weiter informiert.
 
 
