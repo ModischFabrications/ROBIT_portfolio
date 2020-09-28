@@ -1,6 +1,8 @@
-# Bomb Disposal
+\newpage
 
-## Szenario:
+## Bomb Disposal
+
+### Szenario
 
 "Finde und entschärfe die Bombe!"
 
@@ -14,7 +16,7 @@ Eine Berührung löst Sie direkt aus, daher muss die vor Ort entschärft werden.
 Die Entschärfung ist ein "EMP" (Magnet), der auf die Bombe (Reed-Switch) gestellt wird. 
 
 
-## Lerneffekt:
+### Lerneffekt
 
 Zielgruppe Oberstufe, Ausbildung, Bachelor
 Vorwissen
@@ -42,10 +44,10 @@ Micropython oder einfacher
 
 
 Hardware zu fragil für freie Kurse
-Keine Computervision, keine Kartografie -> zu komplex
+Keine Computervision, keine Kartografie → zu komplex
 
 
-## Herausforderungen:
+### Herausforderungen
 1. Distanzsensor und Bewegung peilen zusammen die Position
 2. Intelligente Suchstrategie im Feld
 3. Abgrenzen Sensorpolling gegen andere Module und Geschwindigkeit (künstlich Frequenz begrenzen?)
@@ -55,16 +57,16 @@ Keine Computervision, keine Kartografie -> zu komplex
 6. Teamarbeit und Koordination
 
 
-## Bauteile:
+### Bauteile
 
-### Fahrzeug:
+#### Fahrzeug
 - Computer: Raspberry? Arduino o.ä.?
-- HC-SR04 -> Sonar
-  - Servo -> schwenkbar als optionale Erweiterung
-- Helligkeitssensor/IR unten -> Linienerkennung für Spielfeld
+- HC-SR04 → Sonar
+  - Servo → schwenkbar als optionale Erweiterung
+- Helligkeitssensor/IR unten → Linienerkennung für Spielfeld
 - Motoren + Chassis + Speedcontroller + Räder
 - Servo + Magnetarm
-- Kompass (+ Accelometer + Gyroskop) -> Ortungshilfe 
+- Kompass (+ Accelometer + Gyroskop) → Ortungshilfe 
 - Austauschbarer Akku: 18650 mit BMS (Akkustand)
 
 - primitives Mikrofon: Entschärfen \& Explosion
@@ -73,18 +75,18 @@ Keine Computervision, keine Kartografie -> zu komplex
 - keine Lautsprecher!
 
 
-### Bombe:
-- Piezo + LEDs -> Ticken, evtl. Explosion
-- 7segment ->  Countdown
-- Schüttelsensor -> Kollision
-- Reed-Switch -> Entschärfung
+#### Bombe
+- Piezo + LEDs → Ticken, evtl. Explosion
+- 7segment →  Countdown
+- Schüttelsensor → Kollision
+- Reed-Switch → Entschärfung
 - Arduino-like, evtl. blank Attiny
 - Akkus
 - Lautsprecher für Explosionsgeräusch?
 
 
--> Budget unter 200€, semi-portable Lösung
+→ Budget unter 200€, semi-portable Lösung
 
 
-# Feedback
+## Feedback
 zu destruktiv, lieber positive Story. Genauer spezifizieren, was unsere Umsetzung ist. 
