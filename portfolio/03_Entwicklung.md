@@ -4,11 +4,7 @@
 
 Die Entwicklung lässt sich in 7 Milestones über einen Verlauf von 15 Wochen unterteilen.
 
-TODO wie übergreifende Issues erklären? Encoder bestellen wäre M1, wird aber erst in M3 erklärt
-
-Aufgaben wurden ursprünglich nach logischen Komponenten wie Angel, Sonar und Gehäuse unterteilt, diese Aufteilung war in der Praxis aber nur schwer einzuhalten. Daher wurden viele Aufgaben in der Umsetzung eher nach der behandelten Disziplinen gruppiert. 
-
-
+Aufgaben wurden ursprünglich nach logischen Komponenten wie Angel, Sonar und Gehäuse unterteilt, diese Aufteilung war in der Praxis aber nur schwer einzuhalten. Daher wurden viele Aufgaben in der Umsetzung eher nach der behandelten Disziplinen gruppiert. Genauso waren auch viele Arbeiten über mehrere Milestones verteilt, die hier präsentierte Reihenfolge entspricht eher einer logischen als chronologischen Ordnung. 
 
 ## Milestone 1: Orientierung
 
@@ -150,14 +146,7 @@ Zuletzt wurde als *Easteregg* auch ein Verweis auf das Jahr und die aktuelle Stu
 Alle Grafiken wurden in Inkscape entworfen, in saubere, nicht überlagerte Flächen kombiniert und als SVG-Datei geteilt. 
 
 
-## Milestone 3: Entwicklung
-
-### Platine
-
-Wie in [Elektronik](#elektronik) beschrieben wurde die Elektronik mit Fritzing entworfen, dabei wurde auch eine Visualisierung der Komponenten erstellt um Schülern weitere Informationen zum Innenleben des Fahrzeugs zu bieten. 
-Die Platine wurde iterativ erweitert um Änderungen während der weiteren Entwicklung zu erfassen, die finale Version ist in [TODO Platinenbild] zu sehen. 
-
-TODO Platinenbild
+## Milestone 3: Entwicklung Basisfunktionen
 
 ### Ultraschallsensor
 Der verwendete Sensor war eine HC-SR04, durch dessen weite Verbreitung war die Integration einfach. 
@@ -273,7 +262,7 @@ Hierbei wurden Probleme, wie die kontinuierliche Aktualisierung der Sensoren, au
 
 
 
-## Milestone 4: Entwicklung
+## Milestone 4: Entwicklung Zusatzfunktionen
 
 ### Aufspalten in Bibliotheken
 Die unterschiedlichen Levels der Integration, die Schülern angeboten werden, wurden bereits während der Entwicklung berücksichtigt: 
@@ -313,8 +302,11 @@ Runde Lichtkanäle haben den Lichtkegel etwas runder gemacht, die zusätzlich be
 
 
 ### Platine
+Zu Beginn wurde erstmal eine provisorische Platine gefertigt um Grundfunktionen zu testen, die während der weiteren Entwicklung laufend ergänzt wurde. 
+
 Als Hauptplatine wurde eine 4x6cm Lochrasterplatine gewählt, um die Baugröße möglichst kompakt zu halten.
 Der Entwurf der elektrischen Komponenten wurde mit Hilfe der Open-Source Software `Fritzing` durchgeführt.
+Dabei wurde auch eine Visualisierung der Komponenten erstellt um Schülern weitere Informationen zum Innenleben des Fahrzeugs zu bieten. 
 
 ![Schaltplan](images/schematic.png)
 
