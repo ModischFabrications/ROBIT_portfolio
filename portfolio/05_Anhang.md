@@ -1,3 +1,5 @@
+# Anhang
+
 ## Teileliste
 
 | Bauteil | deutscher Händler | internationaler Händler
@@ -44,5 +46,3 @@ Summe |ca. 100€ | ca. 50€
 
 
 <sup>*</sup> Diese Bauteile wurden durch den Lehrstuhl bereitgestellt.
-
-![Explosionsbild](images/explosion.jpg)
