@@ -1,20 +1,23 @@
-# allgemeine Zielsetzung
+\newpage
+
+## Allgemeine Zielsetzung
 Lehrinhalt oder auch Werkzeug zur Lehre
+
 Kein reiner Kurs oder Präsentation
 
 
-# Inspirationen
-https://www.playosmo.com/de/coding/
-https://codejumper.com/
-https://www.codingame.com/start
-https://www.generationrobots.com/en/402487-bee-bot-educational-robot.html
+## Inspirationen
+* [Osmo](https://www.playosmo.com/de/coding/)
+* [Code Jumper](https://codejumper.com/)
+* [CodinGame](https://www.codingame.com/start)
+* [Bee Bot](https://www.generationrobots.com/en/402487-bee-bot-educational-robot.html)
 
-## Lehrplan Plus Informatik
-https://www.lehrplanplus.bayern.de/fach/informatik/inhalt/fachlehrplaene
-https://www.lehrplanplus.bayern.de/fach/informatik_digitales_gestalten/inhalt/fachlehrplaene
+### Lehrplan Plus Informatik
+* [Informatik](https://www.lehrplanplus.bayern.de/fach/informatik/inhalt/fachlehrplaene)
+* [Informatik digitales Gestalten](https://www.lehrplanplus.bayern.de/fach/informatik_digitales_gestalten/inhalt/fachlehrplaene)
 
 
-# Herausforderungen in der Lehre von Informatik
+## Herausforderungen in der Lehre von Informatik
 
 * Kinder haben gar keine Ahnung von PCs mehr, die lernen eher "Browser öffnen, Seiten drucken, Word schreiben"
 
@@ -22,22 +25,22 @@ https://www.lehrplanplus.bayern.de/fach/informatik_digitales_gestalten/inhalt/fa
 
 * Verhalten im Internet, soziale Medien und Privatsphäre quasi unbelehrt
 Nutzungsbedingungen, Tracking, personalisierte Werbung
--> wichtig, aber nicht unsere Arbeit
+→ wichtig, aber nicht unsere Arbeit
 
 * Welche Daten erfassen Smartphones? 
 Präsentation zu trocken, wenn dann live Übung mit den Schülern
--> Webproxy der Datenstrom analysiert -> juristisch nicht machbar
+→ Webproxy der Datenstrom analysiert → juristisch nicht machbar
 
 * Open Source Live-Lerntafel: “Jitsi als Lehrveranstaltung”
 
 * Lehrer-Kit: Stift tracken und übertragen
--> Tafelarbeit live ohne technisches Verständnis
+→ Tafelarbeit live ohne technisches Verständnis
 
 * Corona-Probleme mit HomeSchooling:
 digitale Ausstattung nicht vorhanden
 Whatsapp als einzige Kontaktmethode
--> 10€ Videochat-Lösung für den Fernseher zu komplex
--> Am Ende des Semesters nicht mehr so relevant
+→ 10€ Videochat-Lösung für den Fernseher zu komplex
+→ Am Ende des Semesters nicht mehr so relevant
 
 * Online-Plattform zum tracken und individuelle Stände messen?
 existiert als Antolin mit geringerer Fächerabdeckung
@@ -45,7 +48,7 @@ existiert als Antolin mit geringerer Fächerabdeckung
 
 * Computerkurs für Lehrer? Existiert, aber überlastet
 Powerpoint-Kurse für Lehrvideos
--> Lehrer als Zielgruppe suchen?
+→ Lehrer als Zielgruppe suchen?
 
 * Sehbehinderte oft ausgeschlossen von Informatik-Unterricht: Screenreader können keine graphische Ausgaben
 
@@ -58,7 +61,7 @@ Powerpoint-Kurse für Lehrvideos
 * Arduino Programmierung am Steckbrett: Direkte Elektronik ist zu fragil, überlebt keinen Klassenraum
 
 * Wie zeigt man jungen Leuten den Sinn an Informatik?
-  - monotone Arbeiten automatisieren -> "Automate the boring stuff"
+  - monotone Arbeiten automatisieren → "Automate the boring stuff"
   - Spieleprogrammierung
   - Mindstorms (NXT)
   - Minecraft-programming (Computercraft stripmining) (das werden wir nicht interessanter können...)

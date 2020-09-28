@@ -1,10 +1,9 @@
 # Das Projekt ROBIT
+![Foto Vorderseite](images/photo_front.jpg) \
 
 ROBIT ist eine Lehr- und Lernplattform, mit der Schülern, Studenten und allen anderen die Grundlagen von Robotik-Systemen beigebracht werden können. 
 
 Das Ziel des Projekts besteht darin eine fiktive Mission mit Hilfe eines Roboters erfolgreich abzuschließen. Hierfür erarbeitet die Gruppe eine Strategie, setzt diese in Programmcode um und testet und verbessert diesen.
-
-
 
 ![Render Vorderseite](images/render_front.png)
 
