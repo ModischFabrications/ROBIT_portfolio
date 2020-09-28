@@ -1,4 +1,6 @@
-# User Stories
+\newpage
+
+## User Stories
 
 1. Als Lehrer will ich das Gerät einfach auf den Ursprungszustand zurücksetzen
 1. Als Lehrer will ich wenig Vorbereitungsaufwand (Akkus laden, ...) wie möglich haben
