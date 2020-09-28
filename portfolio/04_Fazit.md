@@ -1,34 +1,24 @@
 # Fazit
 
-massentaugliches Projekt braucht mehr selbstentworfene Elektronik. 
-Stabile Spannungen und eigene Akkus können effizienter sein, brauchen aber automatische Abschaltung. 
+Um dieses Produkt in größerer Stückzahl bauen zu können, wäre es sinnvoll die Hauptplatine von einem Leiterplattenhersteller fertigten zu lassen, um sich viel manuelles Löten zu ersparen.
 
+Rückblickend hätten wir Motoren mit Encodern oder direkt Schrittmotoren verbauen sollen, da dies eine enge Regelung von Drehzahl und Leistung ermöglicht hätte und eine gleichförmige und somit gerade Bewegung einfacher gemacht hätte.
 
-Motoren sind scheiße, lieber was teureres
-eigene Regelung unnötig kompliziert, übersteuert oder schafft vollständie Ausrichtung nicht. 
-Drehzahlsteuerung viel zu schlecht. 
-Encoder würde Drehung deutlich berechenbarer machen
+Die Messwerte des Ultraschallsensors waren nicht präzise und verlässlich genug, deshalb waren Workarounds und eine komplexere Erkennungslogik notwendig. 
+Für eine höhere Verlässlichkeit, werden z.B. viele Messungen hintereinander gemacht, dies verringert jedoch die effektive Auflösung durch die verlangsamte Zykluszeit.
 
+Bei unserer Referenzimplementierung wird beim Suchen immer im Uhrzeigersinn und beim Zurückdrehen dann gegen den Uhrzeigersinn gedreht. Dieses Verhalten könnte optimiert werden, indem sich beim Zurückdrehen für die Richtung mit dem kleineren Winkel entschieden wird.
 
-Ultraschallsensor nicht präzise und verlässlich genug, viele Workarounds und komplexere Erkennungslogik notwendig. 
-Viele Messungen hintereinander geben höhere Verlässlichkeit, verringern durch die verlangsamte Zykluszeit aber auch die effektive Auflösung. 
+Wenn der Schatz beim Daraufzufahren seitlich verpasst wird, könnte in beide Richtungen gepeilt werden und der Mittelpunkt von Erkennung und Verlust als Zielrichtung genutzt werden.
 
-Schatz wird seitlich verpasst. 
-Bessere Lösungen als die Referenzimplementierung könnten beidseitig peilen und den Mittelpunkt von Erkennung und Verlust als Zielrichtung nutzen. 
+Um die Gyro-Bibliothek stabil verwenden zu können, musste der Sensor zweimal initialisiert werden. Dieser Workaround hat viel Zeit und Testen gebraucht. Alternative Bibliotheken hatten das gleiche Problem.
 
+PlatformIO hat eine etwas höhere Einstiegshürde als Arduino IDE, ist aber komfortabler nutzbar.
 
-Gyro-Lib ist nicht stabil verwendbar, Alternativen nur noch schlimmer. 
+Die LEDs als Statusanzeige sind ist beliebig erweiterbar zum Beispiel durch das Anzeigen von Werten, Zuständen oder Fehlern.
+Somit könnten Messewerte, Distanz, Winkel oder Geschwindigkeiten abgebildet werden. 
+Die Gruppen können frei entscheiden was sie anzeigen wollen, da ein direkter Zugriff auf die LEDs möglich ist.
 
-18650 und eigene Power sind vielleicht flexibler
-
-
-PlatformIO hat Einstiegshürde, ist aber noch gut nutzbar
-
-
-LEDs beliebig erweiterbar, zB durch Error & Co
-weitere Kandidaten waren Distanz, Winkel oder Geschwindigkeiten. 
-Gruppen können frei entscheiden was sie anzeigen wollen, ein direkter Zugriff auf die LEDs ist möglich. 
-
-LED-Farben könnten durch Gammakorrektur kompensiert werden, besonders durch das gelbe Gehäuse
+Durch das gelbe Gehäuse werden die Farben der LEDs etwas verfälscht, dies könnte durch Gammakorrektur kompensiert werden.
 
 
