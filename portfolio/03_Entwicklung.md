@@ -305,7 +305,7 @@ Runde Lichtkanäle haben den Lichtkegel etwas runder gemacht, die zusätzlich be
 Zu Beginn wurde erstmal eine provisorische Platine gefertigt um Grundfunktionen zu testen, die während der weiteren Entwicklung laufend ergänzt wurde. 
 
 Als Hauptplatine wurde eine 4x6cm Lochrasterplatine gewählt, um die Baugröße möglichst kompakt zu halten.
-Der Entwurf der elektrischen Komponenten wurde mit Hilfe der Open-Source Software `Fritzing` durchgeführt.
+Der Entwurf der elektrischen Komponenten wurde mit Hilfe der Open-Source Software [Fritzing](https://fritzing.org) durchgeführt.
 Dabei wurde auch eine Visualisierung der Komponenten erstellt um Schülern weitere Informationen zum Innenleben des Fahrzeugs zu bieten. 
 
 ![Schaltplan](images/schematic.png)
