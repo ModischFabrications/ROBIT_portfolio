@@ -1,9 +1,9 @@
 # Das Projekt ROBIT
 ![Foto Vorderseite](images/photo_front.jpg) \
 
-ROBIT ist eine Lehr- und Lernplattform, mit der Schülern, Studenten und allen anderen die Grundlagen von Robotik-Systemen beigebracht werden können. 
+ROBIT ist eine Lehr- und Lernplattform, mit der Schülern, Studenten, aber auch allen anderen die Grundlagen von Robotik-Systemen beigebracht werden können. 
 
-Das Ziel des Projekts besteht darin eine fiktive Mission mit Hilfe eines Roboters erfolgreich abzuschließen. Hierfür erarbeitet die Gruppe eine Strategie, setzt diese in Programmcode um und testet und verbessert diesen.
+Das Ziel des Projekts besteht darin, eine fiktive Mission mit Hilfe eines Roboters erfolgreich abzuschließen. Hierfür erarbeitet die Gruppe eine Strategie, setzt diese in Programmcode um und testet und verbessert diesen.
 
 ![Render Vorderseite](images/render_front.png)
 
@@ -13,13 +13,13 @@ Das Ziel des Projekts besteht darin eine fiktive Mission mit Hilfe eines Roboter
 
 > Finde und berge den Schatz!
 
-Auf dem Grund eines dunklen Sees liegt ein verborgener Schatz. Da der Druck und die Tiefe so groß sind muss dieser durch eine autonome Drohne geborgen werden. Die Drohne kann den Schatz mit Hilfe eines Sonars aufspüren. Um diesen nun sicher zu bergen muss er zum Ufer des Sees transportiert werden.
+Auf dem Grund eines dunklen Sees liegt ein verborgener Schatz. Da der Druck und die Tiefe so groß sind, muss dieser durch eine autonome Drohne geborgen werden. Die Drohne kann den Schatz mit Hilfe eines Sonars aufspüren. Um diesen nun sicher zu bergen, muss er zum Ufer des Sees transportiert werden.
 
 Der See ist mit Klebeband auf dem Boden markiert. Die Schatzsucher entwickeln und programmieren ein U-Boot, das den Schatz aufspürt und zum Ufer bringt.
 
 ![Skizze Draufsicht](images/RobotTopView_2.png)
 
-Eingriffe in das System sind nur außerhalb vom See möglich, der Roboter muss vollständig autonom die Aufgabe erfüllen können. Geschickte Entwickler können den Roboter wieder zu ihrer Seite des Sees bringen um sich einen weiten Weg zu sparen, das Bergen an anderen Ufern ist aber ebenfalls zulässig. 
+Eingriffe in das System sind nur außerhalb vom See möglich, der Roboter muss vollständig autonom die Aufgabe erfüllen können. Geschickte Entwickler können den Roboter wieder zu ihrer Seite des Sees bringen, um sich einen weiten Weg zu sparen, das Bergen am anderen Ufern ist aber ebenfalls zulässig. 
 
 ### Zielgruppe
 **Vorwissen**
@@ -49,7 +49,7 @@ Eingriffe in das System sind nur außerhalb vom See möglich, der Roboter muss v
 
 ### Herausforderungen
 1. Kombination von Distanzsensor und Bewegung zur Erfassung der Position des Schatzes
-2. Intelligente Suchstrategie um den Schatz aufzuspüren
+2. Intelligente Suchstrategie, um den Schatz aufzuspüren
 3. Anpassungen an realistische, nicht idealisierte Aktuatoren
 4. Definition von Schnittstellen
 5. Verwendung von Libraries
@@ -101,11 +101,11 @@ Bei der Bearbeitung des Projekts stehen drei verschiedene Schwie­rig­keits­gr
 Diese Level unterscheiden sich im benötigten Vorwissen und Zeitaufwand.
 
 ### Level 2
-Dieses Level richtet sich an eine Gruppe mit Grundkenntnissen von C++. Die Ansteuerung der Sensoren und Aktuatoren werden vereinfacht durch die vorgegeben Klassen, die speziell auf die Komponenten abgestimmt sind. Somit liegt der Fokus mehr auf der Entwicklung einer Strategie und dem Programmablauf.
+Dieses Level richtet sich an eine Gruppe mit Grundkenntnissen in C++. Die Ansteuerung der Sensoren und Aktuatoren werden vereinfacht durch die vorgegebenen Klassen, die speziell auf die Komponenten abgestimmt sind. Somit liegen die Schwerpunkte mehr auf der Entwicklung einer Strategie und dem Programmablauf.
 
 ### Level 1
 Dieses Level richtet sich an eine Gruppe mit guten C++ Kenntnissen.
-Die Gruppe erhält die grundlegende Funktionalität zur Ansteuerung der Komponenten in den vorgegeben Klassen.
+Die Gruppe erhält die grundlegende Funktionalität zur Ansteuerung der Komponenten in den vorgegebenen Klassen.
 Ein wichtiger Lehrinhalt ist der Umgang mit realistischer, nicht idealisierter Hardware wie den unkalibrierten Motoren.
 
 ### Level 0
@@ -136,6 +136,6 @@ Für die Programmierung des Roboters wird die [PlatformIO IDE](https://platformi
 
 
 ## Vorbereitung
-Der See wird mit Klebeband auf dem Boden markiert. Ein glatter, möglichst einfarbiger Boden wird bevorzugt. Je nach Bodenfarbe ist das Klebeband mit dem höchsten Kontrast zu wählen. Der Sees sollte einen Durchmesser von mindestens einem Meter haben und mindestens diese Distanz von jeder Wand entfernt sein.
+Der See wird mit Klebeband auf dem Boden markiert. Ein glatter, möglichst einfarbiger Boden wird bevorzugt. Je nach Bodenfarbe ist das Klebeband mit dem höchsten Kontrast zu wählen. Der See sollte einen Durchmesser von mindestens einem Meter haben und mindestens diese Distanz von jeder Wand entfernt sein.
 
 
