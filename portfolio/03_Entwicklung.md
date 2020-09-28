@@ -79,12 +79,15 @@ Falls Platinen professionell bestellt werden, wäre KiCad die bessere Wahl, bei 
 
 ### Aufgabenverteilung
 
-Im Rahmen des Projekts wurden die individuellen Kompetenzen mit den Aufgaben verglichen und zugeordnet. 
+Im Rahmen des Projekts wurden die individuellen Kompetenzen mit den Aufgaben verglichen und zugeordnet.
 
-TODO: 
-RM: Projektmanagement, CAD Karosserie & Schatz, Softwarearchitektur und High-Level Funktionalitäten
-TB: Hardwaremanagement, PCB Design und Fertigung, elektrischer Aufbau, Hardwaretreiber, Laserbearbeitung
-MB: Mechanik, Software, Echtzeitsysteme, Prototyping, CAD: Angel, Abdeckung, Stützrad & Sensoren
+| Robin Modisch | Mark Brieger | Tobias Brieger |
+| :------------- | :------------: | --------------: |
+| Projektmanagement | Mechanik | Hardwaremanagement |
+| CAD: Karosserie & Schatz | Prototyping | PCB Design und Fertigung |
+| Softwarearchitektur | Software | elektrischer Aufbau |
+| High-Level Funktionalitäten | Echtzeitsysteme | Hardwaretreiber |
+| hochwertiger 3D-Druck | CAD: Angel, Abdeckung, Stützrad, Sensoren | Laserbearbeitung | 
 
 Aufgabenpakete wurden laufend erfasst, zugeordnet und überwacht, Abstimmungen fanden etwa einmal die Woche statt. 
 
@@ -93,7 +96,7 @@ Aufgabenpakete wurden laufend erfasst, zugeordnet und überwacht, Abstimmungen f
 
 ### Beschaffung der Komponenten
 
-Bevor neue Teile gekauft wurden, wurden alle bereits im PIB-Labor vorhandenen Teile gesichtet. Es konnten zwei Motoren inklusive Räder und einige Sensor wiederverwendet werden.
+Bevor neue Teile gekauft wurden, wurden alle bereits im DDI-Labor vorhandenen Teile gesichtet. Es konnten zwei Motoren inklusive Räder und einige Sensor wiederverwendet werden.
 
 Vor dem Entwurf des finalen Fahrzeugs wurden die vorhandenen Teile auf einem provisorischen Rahmen montiert und deren Kompatibilität sichergestellt.
 
