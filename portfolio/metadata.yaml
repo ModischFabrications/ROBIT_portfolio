@@ -14,6 +14,6 @@ logo: "images/logo2.pdf"
 logo-width: 200
 toc: true
 toc-own-page: true
-toc-depth: 3
+toc-depth: 2
 colorlinks: true
 ...
