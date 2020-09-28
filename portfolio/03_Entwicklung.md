@@ -108,10 +108,9 @@ Die restlichen Teile wurden online bestellt. Hierbei wurde auch auf die Lieferze
 
 Der Verbrauch und die Geschwindigkeit der Motoren wurden bei unterschiedlichen Spannungen getestet. Die Drehgeschwindigkeit bei 5V wurde als ausreichend erachtet, daher konnte die Powerbank direkt und ohne einen Spannungswandler verwendet werden. 
 
-Encoder war in Überlegung, fertige Motoren waren allerdings einfacher zu verwenden.
-Rückblicken hätten wir Motoren mit Encodern verbauen sollen, da dies eine enge Regelung von Drehzahl und Leistung ermöglicht hätte und eine gleichförmige und somit gerade Bewegung einfacher gemacht hätte. 
+Encoder war in der Überlegung, die fertigen Motoren waren allerdings einfacher zu verwenden.
 
-Der Kompass wurde als alternative Erfassung der Richtungen verwendet und erlaubt ebenfalls die Kompensation von Drifts. 
+Der Kompass wurde als alternative Erfassung der Richtungen verwendet und erlaubt die Kompensation von Drifts. 
 
 Für die Stromversorgung wurde eine Powerbank mit zwei unabhängigen USB-Ausgängen gewählt. Diese ist herausnehmbar und lässt sich komfortabel über den Micro-USB-Standard aufladen. Außerdem bieten die zwei unabhängigen Ausgänge die Möglichkeit, die Stromzufuhr der Motoren von der Stromversorgung des Microcontrollers und der Sensoren zu trennen. Somit werden Messwerte nicht durch Spannungsschwankung der Motoren beeinflusst.
 
