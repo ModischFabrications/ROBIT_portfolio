@@ -2,5 +2,5 @@
 
 This is the portfolio for the code of ROBIT, a teaching platform for realtime embedded systems.
 
-See the [Source Code](https://github.com/ModischFabrications/ROBIT_code) 
-and all [large binaries](https://www.thingiverse.com/modisch_fabrications/designs/TODO) to replicate it.
+See the [source code](https://github.com/ModischFabrications/ROBIT_code) 
+and all [files](https://www.thingiverse.com/thing:4616455) to replicate it.
